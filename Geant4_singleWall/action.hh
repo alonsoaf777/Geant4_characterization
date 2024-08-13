@@ -2,6 +2,8 @@
 #define ACTION_HH
 
 #include "G4VUserActionInitialization.hh"
+
+#include "construction.hh"
 #include "generator.hh"
 #include "run.hh"
 #include "stepping.hh"
@@ -10,11 +12,13 @@
 class MyActionInitialization : public G4VUserActionInitialization
 {
 public: 
-	MyActionInitialization(); 
+	MyActionInitialization(MyDetectorConstruction*); 
 	~MyActionInitialization(); 
 	
 	virtual void Build() const; 
 	virtual void BuildForMaster() const; 
+	
+	MyDetectorConstruction *fDetector = nullptr; 
 };
 
 #endif

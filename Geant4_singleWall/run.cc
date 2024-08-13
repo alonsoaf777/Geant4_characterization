@@ -1,6 +1,6 @@
 #include "run.hh"
 
-MyRunAction::MyRunAction()
+MyRunAction::MyRunAction(MyDetectorConstruction *det, MyPrimaryGenerator *kin) : fDetector(det),fPrimary(kin)
 {
 	//Instantiate the analysis manager for outputs
 	G4AnalysisManager *man = G4AnalysisManager::Instance(); 
@@ -28,6 +28,13 @@ MyRunAction::MyRunAction()
 MyRunAction::~MyRunAction()
 {}
 
+//Generate the run of cross section
+G4Run *MyRunAction::GenerateRun()
+{
+	fRun = new CrossRun(fDetector); 
+	return fRun;
+}
+
 void MyRunAction::BeginOfRunAction(const G4Run* run)
 {
 	G4AnalysisManager *man = G4AnalysisManager::Instance(); 
@@ -39,10 +46,21 @@ void MyRunAction::BeginOfRunAction(const G4Run* run)
 	strRunID << runID; 
 	
 	man->OpenFile("output" + strRunID.str() + ".root"); 
+	
+	if (fPrimary)
+	{
+		G4ParticleDefinition *particle = fPrimary->GetParticleGun()->GetParticleDefinition();
+		G4double energy = fPrimary->GetParticleGun()->GetParticleEnergy();
+		fRun->SetPrimary(particle, energy);
+ 
+	}
+	
 }
 
 void MyRunAction::EndOfRunAction(const G4Run*)
 {
+	fRun->EndOfRun();
+	
 	G4AnalysisManager *man = G4AnalysisManager::Instance(); 
 	
 	man->Write(); 

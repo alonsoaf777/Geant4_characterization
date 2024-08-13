@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sim.dir/action.cc.o"
   "CMakeFiles/sim.dir/construction.cc.o"
+  "CMakeFiles/sim.dir/crossrun.cc.o"
   "CMakeFiles/sim.dir/detector.cc.o"
   "CMakeFiles/sim.dir/event.cc.o"
   "CMakeFiles/sim.dir/generator.cc.o"

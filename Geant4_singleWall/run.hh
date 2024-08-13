@@ -4,14 +4,31 @@
 #include "G4UserRunAction.hh"
 #include "G4Run.hh"
 #include "G4AnalysisManager.hh"
+#include "G4UnitsTable.hh"
+#include "globals.hh"
+#include <iomanip>
+
+#include "construction.hh"
+#include "generator.hh"
+#include "crossrun.hh"
+
+class MyDetectorConstruction; 
+class MyPrimaryGenerator; 
+class CrossRun; 
 
 class MyRunAction : public G4UserRunAction
 {
 public: 
-	MyRunAction(); 
+	MyRunAction(MyDetectorConstruction*, MyPrimaryGenerator*); 
 	~MyRunAction(); 
 	
-	virtual void BeginOfRunAction(const G4Run*); 
-	virtual void EndOfRunAction(const G4Run*); 
+	G4Run* GenerateRun() override; 
+	void BeginOfRunAction(const G4Run*); 
+	void EndOfRunAction(const G4Run*); 
+	
+private: 
+	MyDetectorConstruction *fDetector = nullptr; 
+	MyPrimaryGenerator *fPrimary = nullptr; 
+	CrossRun *fRun = nullptr; 
 };
 #endif

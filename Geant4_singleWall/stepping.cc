@@ -25,5 +25,15 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	//Gets the total energy of all detector 
 	G4double edep = step->GetTotalEnergyDeposit(); 
 	fEventAction->AddEdep(edep); 
+	
+	//Process Counter
+	G4StepPoint* endPoint = step->GetPostStepPoint(); 
+	G4String procName = endPoint->GetProcessDefinedStep()->GetProcessName(); 
+	
+	CrossRun *run = static_cast<CrossRun*>(G4RunManager::GetRunManager()->GetNonConstCurrentRun());
+	run->CountProcesses(procName); 
+	
+	//kill after interaction
+	G4RunManager::GetRunManager()->AbortEvent(); 
 }
 

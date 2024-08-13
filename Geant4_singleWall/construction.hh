@@ -23,6 +23,9 @@ public:
 	G4LogicalVolume *GetScoringVolume() const { return fScoringVolume; }
 	//Func to access the target position
 	G4ThreeVector GetTargetPosition() const { return targetPosition; }
+	//Func to obtain the material properties of the target
+	G4Material *GetMaterial() const {return fMaterial; }
+	G4double GetThickness() const {return targetThickness; }
 	
 	virtual G4VPhysicalVolume *Construct(); 
 
@@ -34,12 +37,12 @@ private:
 	G4VPhysicalVolume *physWorld, *physWall, *physDetector; 
 	
 	G4int nCols, nRows; 
-	G4double singleWallZ; //Depth of the target 
+	G4double singleWallZ, targetThickness; //Depth of the target 
 	G4ThreeVector targetPosition; //Position of the target we will access it in the generator
 	
 	G4GenericMessenger *fMessenger; 
 	
-	G4Material *wallMat, *detectorMat, *worldMat; 
+	G4Material *wallMat, *detectorMat, *worldMat, *fMaterial; 
 	
 	void DefineMaterials();
 

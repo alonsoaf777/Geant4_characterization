@@ -20,10 +20,11 @@ int main(int argc, char** argv)
 	}
 	
 	//Construct a default run manager
+	MyDetectorConstruction *det = new MyDetectorConstruction; 
 	G4RunManager *runManager = new G4RunManager(); 
-	runManager->SetUserInitialization(new MyDetectorConstruction()); 
+	runManager->SetUserInitialization(det); 
 	runManager->SetUserInitialization(new MyPhysicsList()); 
-	runManager->SetUserInitialization(new MyActionInitialization());
+	runManager->SetUserInitialization(new MyActionInitialization(det));
 	runManager->Initialize(); 
 	
 	//Create a default vis manager
