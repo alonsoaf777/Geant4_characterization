@@ -1,4 +1,0 @@
-/Users/miguelcomett/geant4-v11.2.1/Estancia de investigación/Actividad 1/build/CMakeFiles/SimMain.dir
-/Users/miguelcomett/geant4-v11.2.1/Estancia de investigación/Actividad 1/build/CMakeFiles/MyG4Simulation.dir
-/Users/miguelcomett/geant4-v11.2.1/Estancia de investigación/Actividad 1/build/CMakeFiles/edit_cache.dir
-/Users/miguelcomett/geant4-v11.2.1/Estancia de investigación/Actividad 1/build/CMakeFiles/rebuild_cache.dir
