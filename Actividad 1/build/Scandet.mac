@@ -1,0 +1,3 @@
+/myDetector/nColumns {Columns}
+/run/reinitializeGeometry
+/run/beamOn 100

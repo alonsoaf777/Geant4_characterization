@@ -1,0 +1,3 @@
+/run/numberOfThreads 9
+/run/initialize
+/control/loop Scandet.mac Columns 10 100 10
