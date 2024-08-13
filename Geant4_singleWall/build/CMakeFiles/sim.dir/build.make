@@ -57,113 +57,126 @@ include CMakeFiles/sim.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/sim.dir/flags.make
 
-CMakeFiles/sim.dir/action.cc.o: CMakeFiles/sim.dir/flags.make
-CMakeFiles/sim.dir/action.cc.o: ../action.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sim.dir/action.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/action.cc.o -c /home/alosnamon/Geant4_singleWall/action.cc
+CMakeFiles/sim.dir/src/action.cc.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/src/action.cc.o: ../src/action.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sim.dir/src/action.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/action.cc.o -c /home/alosnamon/Geant4_singleWall/src/action.cc
 
-CMakeFiles/sim.dir/action.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/action.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/action.cc > CMakeFiles/sim.dir/action.cc.i
+CMakeFiles/sim.dir/src/action.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/action.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/src/action.cc > CMakeFiles/sim.dir/src/action.cc.i
 
-CMakeFiles/sim.dir/action.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/action.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/action.cc -o CMakeFiles/sim.dir/action.cc.s
+CMakeFiles/sim.dir/src/action.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/action.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/src/action.cc -o CMakeFiles/sim.dir/src/action.cc.s
 
-CMakeFiles/sim.dir/construction.cc.o: CMakeFiles/sim.dir/flags.make
-CMakeFiles/sim.dir/construction.cc.o: ../construction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sim.dir/construction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/construction.cc.o -c /home/alosnamon/Geant4_singleWall/construction.cc
+CMakeFiles/sim.dir/src/construction.cc.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/src/construction.cc.o: ../src/construction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sim.dir/src/construction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/construction.cc.o -c /home/alosnamon/Geant4_singleWall/src/construction.cc
 
-CMakeFiles/sim.dir/construction.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/construction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/construction.cc > CMakeFiles/sim.dir/construction.cc.i
+CMakeFiles/sim.dir/src/construction.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/construction.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/src/construction.cc > CMakeFiles/sim.dir/src/construction.cc.i
 
-CMakeFiles/sim.dir/construction.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/construction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/construction.cc -o CMakeFiles/sim.dir/construction.cc.s
+CMakeFiles/sim.dir/src/construction.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/construction.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/src/construction.cc -o CMakeFiles/sim.dir/src/construction.cc.s
 
-CMakeFiles/sim.dir/crossrun.cc.o: CMakeFiles/sim.dir/flags.make
-CMakeFiles/sim.dir/crossrun.cc.o: ../crossrun.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sim.dir/crossrun.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/crossrun.cc.o -c /home/alosnamon/Geant4_singleWall/crossrun.cc
+CMakeFiles/sim.dir/src/crossrun.cc.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/src/crossrun.cc.o: ../src/crossrun.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sim.dir/src/crossrun.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/crossrun.cc.o -c /home/alosnamon/Geant4_singleWall/src/crossrun.cc
 
-CMakeFiles/sim.dir/crossrun.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/crossrun.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/crossrun.cc > CMakeFiles/sim.dir/crossrun.cc.i
+CMakeFiles/sim.dir/src/crossrun.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/crossrun.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/src/crossrun.cc > CMakeFiles/sim.dir/src/crossrun.cc.i
 
-CMakeFiles/sim.dir/crossrun.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/crossrun.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/crossrun.cc -o CMakeFiles/sim.dir/crossrun.cc.s
+CMakeFiles/sim.dir/src/crossrun.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/crossrun.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/src/crossrun.cc -o CMakeFiles/sim.dir/src/crossrun.cc.s
 
-CMakeFiles/sim.dir/detector.cc.o: CMakeFiles/sim.dir/flags.make
-CMakeFiles/sim.dir/detector.cc.o: ../detector.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sim.dir/detector.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/detector.cc.o -c /home/alosnamon/Geant4_singleWall/detector.cc
+CMakeFiles/sim.dir/src/detector.cc.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/src/detector.cc.o: ../src/detector.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sim.dir/src/detector.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/detector.cc.o -c /home/alosnamon/Geant4_singleWall/src/detector.cc
 
-CMakeFiles/sim.dir/detector.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/detector.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/detector.cc > CMakeFiles/sim.dir/detector.cc.i
+CMakeFiles/sim.dir/src/detector.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/detector.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/src/detector.cc > CMakeFiles/sim.dir/src/detector.cc.i
 
-CMakeFiles/sim.dir/detector.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/detector.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/detector.cc -o CMakeFiles/sim.dir/detector.cc.s
+CMakeFiles/sim.dir/src/detector.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/detector.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/src/detector.cc -o CMakeFiles/sim.dir/src/detector.cc.s
 
-CMakeFiles/sim.dir/event.cc.o: CMakeFiles/sim.dir/flags.make
-CMakeFiles/sim.dir/event.cc.o: ../event.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sim.dir/event.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/event.cc.o -c /home/alosnamon/Geant4_singleWall/event.cc
+CMakeFiles/sim.dir/src/event.cc.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/src/event.cc.o: ../src/event.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sim.dir/src/event.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/event.cc.o -c /home/alosnamon/Geant4_singleWall/src/event.cc
 
-CMakeFiles/sim.dir/event.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/event.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/event.cc > CMakeFiles/sim.dir/event.cc.i
+CMakeFiles/sim.dir/src/event.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/event.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/src/event.cc > CMakeFiles/sim.dir/src/event.cc.i
 
-CMakeFiles/sim.dir/event.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/event.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/event.cc -o CMakeFiles/sim.dir/event.cc.s
+CMakeFiles/sim.dir/src/event.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/event.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/src/event.cc -o CMakeFiles/sim.dir/src/event.cc.s
 
-CMakeFiles/sim.dir/generator.cc.o: CMakeFiles/sim.dir/flags.make
-CMakeFiles/sim.dir/generator.cc.o: ../generator.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sim.dir/generator.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/generator.cc.o -c /home/alosnamon/Geant4_singleWall/generator.cc
+CMakeFiles/sim.dir/src/generator.cc.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/src/generator.cc.o: ../src/generator.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sim.dir/src/generator.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/generator.cc.o -c /home/alosnamon/Geant4_singleWall/src/generator.cc
 
-CMakeFiles/sim.dir/generator.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/generator.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/generator.cc > CMakeFiles/sim.dir/generator.cc.i
+CMakeFiles/sim.dir/src/generator.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/generator.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/src/generator.cc > CMakeFiles/sim.dir/src/generator.cc.i
 
-CMakeFiles/sim.dir/generator.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/generator.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/generator.cc -o CMakeFiles/sim.dir/generator.cc.s
+CMakeFiles/sim.dir/src/generator.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/generator.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/src/generator.cc -o CMakeFiles/sim.dir/src/generator.cc.s
 
-CMakeFiles/sim.dir/physics.cc.o: CMakeFiles/sim.dir/flags.make
-CMakeFiles/sim.dir/physics.cc.o: ../physics.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sim.dir/physics.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/physics.cc.o -c /home/alosnamon/Geant4_singleWall/physics.cc
+CMakeFiles/sim.dir/src/physics.cc.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/src/physics.cc.o: ../src/physics.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sim.dir/src/physics.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/physics.cc.o -c /home/alosnamon/Geant4_singleWall/src/physics.cc
 
-CMakeFiles/sim.dir/physics.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/physics.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/physics.cc > CMakeFiles/sim.dir/physics.cc.i
+CMakeFiles/sim.dir/src/physics.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/physics.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/src/physics.cc > CMakeFiles/sim.dir/src/physics.cc.i
 
-CMakeFiles/sim.dir/physics.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/physics.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/physics.cc -o CMakeFiles/sim.dir/physics.cc.s
+CMakeFiles/sim.dir/src/physics.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/physics.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/src/physics.cc -o CMakeFiles/sim.dir/src/physics.cc.s
 
-CMakeFiles/sim.dir/run.cc.o: CMakeFiles/sim.dir/flags.make
-CMakeFiles/sim.dir/run.cc.o: ../run.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sim.dir/run.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/run.cc.o -c /home/alosnamon/Geant4_singleWall/run.cc
+CMakeFiles/sim.dir/src/run.cc.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/src/run.cc.o: ../src/run.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sim.dir/src/run.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/run.cc.o -c /home/alosnamon/Geant4_singleWall/src/run.cc
 
-CMakeFiles/sim.dir/run.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/run.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/run.cc > CMakeFiles/sim.dir/run.cc.i
+CMakeFiles/sim.dir/src/run.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/run.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/src/run.cc > CMakeFiles/sim.dir/src/run.cc.i
 
-CMakeFiles/sim.dir/run.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/run.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/run.cc -o CMakeFiles/sim.dir/run.cc.s
+CMakeFiles/sim.dir/src/run.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/run.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/src/run.cc -o CMakeFiles/sim.dir/src/run.cc.s
+
+CMakeFiles/sim.dir/src/stepping.cc.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/src/stepping.cc.o: ../src/stepping.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/sim.dir/src/stepping.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/src/stepping.cc.o -c /home/alosnamon/Geant4_singleWall/src/stepping.cc
+
+CMakeFiles/sim.dir/src/stepping.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/stepping.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/src/stepping.cc > CMakeFiles/sim.dir/src/stepping.cc.i
+
+CMakeFiles/sim.dir/src/stepping.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/stepping.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/src/stepping.cc -o CMakeFiles/sim.dir/src/stepping.cc.s
 
 CMakeFiles/sim.dir/sim.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/sim.cc.o: ../sim.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/sim.dir/sim.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/sim.dir/sim.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/sim.cc.o -c /home/alosnamon/Geant4_singleWall/sim.cc
 
 CMakeFiles/sim.dir/sim.cc.i: cmake_force
@@ -174,45 +187,32 @@ CMakeFiles/sim.dir/sim.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/sim.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/sim.cc -o CMakeFiles/sim.dir/sim.cc.s
 
-CMakeFiles/sim.dir/stepping.cc.o: CMakeFiles/sim.dir/flags.make
-CMakeFiles/sim.dir/stepping.cc.o: ../stepping.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alosnamon/Geant4_singleWall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/sim.dir/stepping.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sim.dir/stepping.cc.o -c /home/alosnamon/Geant4_singleWall/stepping.cc
-
-CMakeFiles/sim.dir/stepping.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/stepping.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alosnamon/Geant4_singleWall/stepping.cc > CMakeFiles/sim.dir/stepping.cc.i
-
-CMakeFiles/sim.dir/stepping.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/stepping.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alosnamon/Geant4_singleWall/stepping.cc -o CMakeFiles/sim.dir/stepping.cc.s
-
 # Object files for target sim
 sim_OBJECTS = \
-"CMakeFiles/sim.dir/action.cc.o" \
-"CMakeFiles/sim.dir/construction.cc.o" \
-"CMakeFiles/sim.dir/crossrun.cc.o" \
-"CMakeFiles/sim.dir/detector.cc.o" \
-"CMakeFiles/sim.dir/event.cc.o" \
-"CMakeFiles/sim.dir/generator.cc.o" \
-"CMakeFiles/sim.dir/physics.cc.o" \
-"CMakeFiles/sim.dir/run.cc.o" \
-"CMakeFiles/sim.dir/sim.cc.o" \
-"CMakeFiles/sim.dir/stepping.cc.o"
+"CMakeFiles/sim.dir/src/action.cc.o" \
+"CMakeFiles/sim.dir/src/construction.cc.o" \
+"CMakeFiles/sim.dir/src/crossrun.cc.o" \
+"CMakeFiles/sim.dir/src/detector.cc.o" \
+"CMakeFiles/sim.dir/src/event.cc.o" \
+"CMakeFiles/sim.dir/src/generator.cc.o" \
+"CMakeFiles/sim.dir/src/physics.cc.o" \
+"CMakeFiles/sim.dir/src/run.cc.o" \
+"CMakeFiles/sim.dir/src/stepping.cc.o" \
+"CMakeFiles/sim.dir/sim.cc.o"
 
 # External object files for target sim
 sim_EXTERNAL_OBJECTS =
 
-sim: CMakeFiles/sim.dir/action.cc.o
-sim: CMakeFiles/sim.dir/construction.cc.o
-sim: CMakeFiles/sim.dir/crossrun.cc.o
-sim: CMakeFiles/sim.dir/detector.cc.o
-sim: CMakeFiles/sim.dir/event.cc.o
-sim: CMakeFiles/sim.dir/generator.cc.o
-sim: CMakeFiles/sim.dir/physics.cc.o
-sim: CMakeFiles/sim.dir/run.cc.o
+sim: CMakeFiles/sim.dir/src/action.cc.o
+sim: CMakeFiles/sim.dir/src/construction.cc.o
+sim: CMakeFiles/sim.dir/src/crossrun.cc.o
+sim: CMakeFiles/sim.dir/src/detector.cc.o
+sim: CMakeFiles/sim.dir/src/event.cc.o
+sim: CMakeFiles/sim.dir/src/generator.cc.o
+sim: CMakeFiles/sim.dir/src/physics.cc.o
+sim: CMakeFiles/sim.dir/src/run.cc.o
+sim: CMakeFiles/sim.dir/src/stepping.cc.o
 sim: CMakeFiles/sim.dir/sim.cc.o
-sim: CMakeFiles/sim.dir/stepping.cc.o
 sim: CMakeFiles/sim.dir/build.make
 sim: /usr/local/lib/libG4Tree.so
 sim: /usr/local/lib/libG4FR.so

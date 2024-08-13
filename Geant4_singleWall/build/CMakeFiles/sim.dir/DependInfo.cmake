@@ -4,16 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/alosnamon/Geant4_singleWall/action.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/action.cc.o"
-  "/home/alosnamon/Geant4_singleWall/construction.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/construction.cc.o"
-  "/home/alosnamon/Geant4_singleWall/crossrun.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/crossrun.cc.o"
-  "/home/alosnamon/Geant4_singleWall/detector.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/detector.cc.o"
-  "/home/alosnamon/Geant4_singleWall/event.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/event.cc.o"
-  "/home/alosnamon/Geant4_singleWall/generator.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/generator.cc.o"
-  "/home/alosnamon/Geant4_singleWall/physics.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/physics.cc.o"
-  "/home/alosnamon/Geant4_singleWall/run.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/run.cc.o"
   "/home/alosnamon/Geant4_singleWall/sim.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/sim.cc.o"
-  "/home/alosnamon/Geant4_singleWall/stepping.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/stepping.cc.o"
+  "/home/alosnamon/Geant4_singleWall/src/action.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/src/action.cc.o"
+  "/home/alosnamon/Geant4_singleWall/src/construction.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/src/construction.cc.o"
+  "/home/alosnamon/Geant4_singleWall/src/crossrun.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/src/crossrun.cc.o"
+  "/home/alosnamon/Geant4_singleWall/src/detector.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/src/detector.cc.o"
+  "/home/alosnamon/Geant4_singleWall/src/event.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/src/event.cc.o"
+  "/home/alosnamon/Geant4_singleWall/src/generator.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/src/generator.cc.o"
+  "/home/alosnamon/Geant4_singleWall/src/physics.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/src/physics.cc.o"
+  "/home/alosnamon/Geant4_singleWall/src/run.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/src/run.cc.o"
+  "/home/alosnamon/Geant4_singleWall/src/stepping.cc" "/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir/src/stepping.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -37,6 +37,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../include"
   "/usr/local/include/Geant4"
   "/usr/include/x86_64-linux-gnu/qt5"
   "/usr/include/x86_64-linux-gnu/qt5/QtGui"
