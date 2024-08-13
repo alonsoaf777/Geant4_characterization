@@ -1,0 +1,4 @@
+/home/alosnamon/Geant4_singleWall/build/CMakeFiles/rebuild_cache.dir
+/home/alosnamon/Geant4_singleWall/build/CMakeFiles/Simulation.dir
+/home/alosnamon/Geant4_singleWall/build/CMakeFiles/edit_cache.dir
+/home/alosnamon/Geant4_singleWall/build/CMakeFiles/sim.dir
