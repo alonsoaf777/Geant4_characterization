@@ -76,13 +76,46 @@ https://www.msesupplies.com/products/pbwo4-crystals-lead-tungstate
 
 # Wolframium characterization
 
-0.01 - 0.03 keV
+0.00613050000 - 0.01 keV
+
+        G4double targetThickness = 60 * nm;
+
+0.01 - 0.05 keV
 
         G4double targetThickness = 80 * nm;
 
+0.05 - 0.1 keV
+
+        G4double targetThickness = 120 * nm;
+
+0.05 - 0.1 keV
+
+        G4double targetThickness = 250 * nm;
+
+0.1 - 0.9 keV
+
+        G4double targetThickness = 280 * nm;
+
+0.9 - 3.5 keV
+
+        G4double targetThickness = 700 * nm;
+
+3.5 - 6 keV
+
+        G4double targetThickness = 2200 * nm;
+
+6 - 20 keV
+
+        G4double targetThickness = 9000 * nm;
+
+20 - 25 keV
+
+        G4double targetThickness = 40000 * nm;
+
+
 25 - 100 keV
 
-     G4double targetThickness = 0.1 * mm;
+        G4double targetThickness = 0.1 * mm;
 
 100 - 200 keV
 
@@ -95,3 +128,7 @@ https://www.msesupplies.com/products/pbwo4-crystals-lead-tungstate
 300 - 432.9451
 
         G4double targetThickness = 13 * mm;
+
+
+
+01000011 01110101 01101001 01100100 01100001 01100100 01101111 00100000 01100101 01110011 01110101 01100011 00100000 01101110 00100000 01101100 00100000 01110011 01110100 01101100 01110011 00100000 01110100 01110001 01110100 01101101 01100011 00100000 01100101 01100101 00100000 01110101 00100000 01100001 00100000 01110000 01110001 01111001 01101100 00100000 01101000 01110010 00100000 01110000 01110010 00100000 01100101 00100000 01100101 00100000 01101100 00100000 01100111 00100000 01110100 01110101 00100000 01110000 01110101 01100101 01100100 01100101 01110011 
