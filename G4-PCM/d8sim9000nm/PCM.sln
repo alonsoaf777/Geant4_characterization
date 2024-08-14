@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCM", "PCM.vcxproj", "{EAED1F28-5FE0-3F60-9AF4-BFD5927A467F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{871B064A-00BC-3D40-B3EB-4F05D880AACC} = {871B064A-00BC-3D40-B3EB-4F05D880AACC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{6C7A0777-24F2-3BDE-9878-389132CF3FF7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EAED1F28-5FE0-3F60-9AF4-BFD5927A467F} = {EAED1F28-5FE0-3F60-9AF4-BFD5927A467F}
+		{871B064A-00BC-3D40-B3EB-4F05D880AACC} = {871B064A-00BC-3D40-B3EB-4F05D880AACC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "INSTALL", "INSTALL.vcxproj", "{DD46F2E0-F5B9-3EB0-A57E-3946B1D65C0A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6C7A0777-24F2-3BDE-9878-389132CF3FF7} = {6C7A0777-24F2-3BDE-9878-389132CF3FF7}
+		{871B064A-00BC-3D40-B3EB-4F05D880AACC} = {871B064A-00BC-3D40-B3EB-4F05D880AACC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vcxproj", "{871B064A-00BC-3D40-B3EB-4F05D880AACC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAED1F28-5FE0-3F60-9AF4-BFD5927A467F}.Release|x64.ActiveCfg = Release|x64
+		{EAED1F28-5FE0-3F60-9AF4-BFD5927A467F}.Release|x64.Build.0 = Release|x64
+		{6C7A0777-24F2-3BDE-9878-389132CF3FF7}.Release|x64.ActiveCfg = Release|x64
+		{6C7A0777-24F2-3BDE-9878-389132CF3FF7}.Release|x64.Build.0 = Release|x64
+		{DD46F2E0-F5B9-3EB0-A57E-3946B1D65C0A}.Release|x64.ActiveCfg = Release|x64
+		{871B064A-00BC-3D40-B3EB-4F05D880AACC}.Release|x64.ActiveCfg = Release|x64
+		{871B064A-00BC-3D40-B3EB-4F05D880AACC}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B640E2F5-D4C4-3E81-8A51-27C6DEA3299A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

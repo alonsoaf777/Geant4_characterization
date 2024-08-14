@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\PCM.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\src\Actioninit.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\src\DetectorConstruction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\src\EventAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\src\PhysicsList.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\src\PrimaryGeneratorAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\src\RunAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\src\SteppingAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\include\ActionInit.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\include\DetectorConstruction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\include\EventAction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\include\PhysicsList.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\include\PrimaryGeneratorAction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\include\RunAction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\include\SteppingAction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8E0CC527-9040-379A-8C74-C0B0A7821FB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8CDEED13-116F-35A5-B48D-03C1B8221B04}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

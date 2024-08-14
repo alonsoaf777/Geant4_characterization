@@ -1,0 +1,11 @@
+﻿  Building Custom Rule C:/Users/conej/Documents/Universidad/Geant4/Projects/Git/G4-PCM/CMakeLists.txt
+  PCM.cc
+  Actioninit.cc
+  DetectorConstruction.cc
+  EventAction.cc
+  PhysicsList.cc
+  PrimaryGeneratorAction.cc
+  RunAction.cc
+  SteppingAction.cc
+  Generating Code...
+  PCM.vcxproj -> C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\d5sim280nm\Release\PCM.exe

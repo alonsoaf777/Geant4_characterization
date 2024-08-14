@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\d8sim9000nm\CMakeFiles\ad98c59aa1856e9e89bc2171774a04ff\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D49BCA11-8504-34DF-BDD8-71FB0927EC3D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
