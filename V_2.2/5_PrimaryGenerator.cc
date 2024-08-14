@@ -11,7 +11,7 @@ MyPrimaryGenerator::MyPrimaryGenerator()
     G4ParticleDefinition * particle = particleTable -> FindParticle(particleName);
 
     fParticleGun -> SetParticleDefinition(particle);
-    fParticleGun -> SetParticleEnergy(1.0 * MeV);
+    fParticleGun -> SetParticleEnergy(300.0 * keV);
 }
 
 MyPrimaryGenerator::~MyPrimaryGenerator() { delete fParticleGun; }

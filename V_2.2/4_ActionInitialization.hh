@@ -12,14 +12,11 @@
 class MyActionInitialization : public G4VUserActionInitialization
 {
     public:
-        MyActionInitialization(MyDetectorConstruction *);
+        MyActionInitialization();
         ~MyActionInitialization();
 
         virtual void Build() const;
         virtual void BuildForMaster() const;
-    
-    private:
-        MyDetectorConstruction * fDetector = nullptr;
 };
 
 #endif

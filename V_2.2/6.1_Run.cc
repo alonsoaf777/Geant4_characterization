@@ -9,13 +9,13 @@
 #include "3.0_DetectorConstruction.hh"
 #include "5_PrimaryGenerator.hh"
 
-Run::Run(MyDetectorConstruction * det): fDetector(det){}
+Run::Run(){}
 Run::~Run(){}
 
 void Run::SetPrimary(G4ParticleDefinition * particle, G4double energy)
 { 
-    fParticle = particle;
-    fEkin = energy;
+    link_ParticleDefinition = particle; 
+    link_KEnergy = energy;
 }
 
 void Run::CountProcesses(G4String procName) 
@@ -36,15 +36,17 @@ void Run::EndOfRun()
     G4int prec = 5; 
 	G4int dfprec = G4cout.precision(prec);
 
-    G4String partName     = fParticle -> GetParticleName();    
-    G4Material * material = fDetector -> GetMaterial();
+    const MyDetectorConstruction * detectorConstruction = static_cast<const MyDetectorConstruction*> (G4RunManager::GetRunManager()->GetUserDetectorConstruction());     
+
+    G4String particleName = link_ParticleDefinition -> GetParticleName();    
+    G4Material * material = detectorConstruction -> GetMaterial();
     G4double density      = material  -> GetDensity();
-    G4double thickness    = fDetector -> GetThickness();
+    G4double thickness    = detectorConstruction -> GetThickness();
         
     G4cout << "\n ======================== run summary ======================\n";
 
-    G4cout << "\n The run is: " << numberOfEvent << " " << partName << " of "
-            << G4BestUnit(fEkin, "Energy") << " through " 
+    G4cout << "\n The run is: " << numberOfEvent << " " << particleName << " of "
+            << G4BestUnit(link_KEnergy, "Energy") << " through " 
             << G4BestUnit(thickness, "Length") << " of "
             << material -> GetName() << " (density: " 
             << G4BestUnit(density, "Volumic Mass") << ")" << G4endl;
@@ -92,8 +94,8 @@ void Run::Merge(const G4Run * run)
   const Run * localRun = static_cast <const Run*> (run);
 
   // pass information about primary particle
-  fParticle = localRun -> fParticle;
-  fEkin     = localRun -> fEkin;
+  link_ParticleDefinition = localRun -> link_ParticleDefinition;
+  link_KEnergy = localRun -> link_KEnergy;
       
   std::map<G4String,G4int>::const_iterator it;
   for (it  = localRun -> fProcCounter.begin(); 

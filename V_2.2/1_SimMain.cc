@@ -30,11 +30,9 @@ int main(int argc, char** argv)
         G4cout << "-----Running in multi-threaded mode------" << G4endl;
     }
 
-    MyDetectorConstruction * det = new MyDetectorConstruction;
-
-    runManager -> SetUserInitialization(det);
+    runManager -> SetUserInitialization(new MyDetectorConstruction);
     runManager -> SetUserInitialization(new MyPhysicsList);
-    runManager -> SetUserInitialization(new MyActionInitialization(det)); 
+    runManager -> SetUserInitialization(new MyActionInitialization); 
 
     G4VisManager * visManager = new G4VisExecutive();
     visManager -> Initialize();

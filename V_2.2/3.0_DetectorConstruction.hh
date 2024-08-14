@@ -21,11 +21,10 @@ class MyDetectorConstruction : public G4VUserDetectorConstruction
         G4LogicalVolume * GetScoringVolume() const {return fScoringVolume;}
         virtual G4VPhysicalVolume * Construct();
 
-        G4Material * GetMaterial() const {return fMaterial;}
-	    G4double GetThickness() const {return targetThickness;}
+        G4Material * GetMaterial() const {return link_MaterialTarget;}
+	    G4double GetThickness() const {return link_ThicknessTarget;}
     
     private:
-        
         G4Box * solidWorld, * solidDetector, * solidRadiator;
         G4LogicalVolume * logicWorld, * logicRadiator, * logicDetector, * fScoringVolume;
         G4VPhysicalVolume * physicalWorld, * physicalRadiator, * physicalDetector;
@@ -34,13 +33,13 @@ class MyDetectorConstruction : public G4VUserDetectorConstruction
         
         void DefineMaterials();
 
-        G4Material * SiO2, * H2O, * Aerogel, * worldMaterial, * Aluminum, * Air, * fMaterial;
+        G4Material * SiO2, * H2O, * Aerogel, * worldMaterial, * Aluminum, * Air, * link_MaterialTarget;
         G4Element * C, * Al, * N, * O;
 
         G4int nColumns, nRows;
         G4GenericMessenger * fDetectorMessenger;  
 
-        G4double targetThickness;
+        G4double link_ThicknessTarget;
 };
 
 #endif 

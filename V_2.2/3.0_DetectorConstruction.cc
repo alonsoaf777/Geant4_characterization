@@ -54,12 +54,13 @@ void MyDetectorConstruction::DefineMaterials()
     G4MaterialPropertiesTable * worldMaterialProperties = new G4MaterialPropertiesTable();
     worldMaterialProperties -> AddProperty("RINDEX", PhotonEnergy, RindexWorld, 2);
     worldMaterial -> SetMaterialPropertiesTable(worldMaterialProperties);
-
-    fMaterial = Aluminum;
 }
 
 G4VPhysicalVolume * MyDetectorConstruction::Construct()
 {
+    link_MaterialTarget = Aluminum;
+    link_ThicknessTarget = 1; 
+
     G4double xWorld = 0.5*m;
     G4double yWorld = 0.5*m;
     G4double zWorld = 0.5*m;
@@ -68,10 +69,8 @@ G4VPhysicalVolume * MyDetectorConstruction::Construct()
     logicWorld = new G4LogicalVolume(solidWorld, Air, "LogicalWorld");
     physicalWorld = new G4PVPlacement(0, G4ThreeVector(0.0, 0.0, 0.0), logicWorld, "PhysicalWorld", 0, false, 0, true);
 
-    targetThickness = 1; 
-
-    solidRadiator = new G4Box("solidRadiator", 0.4*m, 0.4*m, targetThickness/2 *cm);
-    logicRadiator = new G4LogicalVolume(solidRadiator, fMaterial, "logicalRadiator");
+    solidRadiator = new G4Box("solidRadiator", 0.4*m, 0.4*m, link_ThicknessTarget/2 *cm);
+    logicRadiator = new G4LogicalVolume(solidRadiator, link_MaterialTarget, "logicalRadiator");
     physicalRadiator = new G4PVPlacement(0, G4ThreeVector(0.0, 0.0, 0.25*m), logicRadiator, "PhysicalRadiator", logicWorld, false, 0, true);
 
     fScoringVolume = logicRadiator;

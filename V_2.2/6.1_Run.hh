@@ -12,8 +12,8 @@
 class Run : public G4Run
 {
   public:
-    Run(MyDetectorConstruction *);
-    ~ Run() override = default;
+    Run();
+    ~Run();
 
   public:
     void SetPrimary(G4ParticleDefinition * particle, G4double energy);
@@ -22,9 +22,8 @@ class Run : public G4Run
     void EndOfRun();
 
   private:
-    MyDetectorConstruction * fDetector = nullptr;
-    G4ParticleDefinition * fParticle = nullptr;
-    G4double fEkin = 0.0;
+    G4ParticleDefinition * link_ParticleDefinition = nullptr;
+    G4double link_KEnergy = 0.0;
 
     std::map<G4String,G4int>  fProcCounter;
 };

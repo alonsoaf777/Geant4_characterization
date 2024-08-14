@@ -6,13 +6,14 @@
 #include "G4Run.hh"
 
 #include "3.0_DetectorConstruction.hh"
+#include "5_PrimaryGenerator.hh"
 #include "6.1_Run.hh"
 
 class MyRunAction : public G4UserRunAction
 {
     public:
-        MyRunAction(MyDetectorConstruction *, MyPrimaryGenerator *);
-        ~ MyRunAction();
+        MyRunAction();
+        ~MyRunAction();
 
         virtual void BeginOfRunAction(const G4Run*) override;
         virtual void EndOfRunAction(const G4Run*) override;
@@ -20,8 +21,6 @@ class MyRunAction : public G4UserRunAction
         G4Run * GenerateRun() override;
 
     private:
-        MyDetectorConstruction * fDetector = nullptr;
-        MyPrimaryGenerator * fPrimary  = nullptr;
         Run * fRun = nullptr;
 };
 

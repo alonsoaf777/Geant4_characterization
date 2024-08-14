@@ -9,7 +9,7 @@
 #include "6.0_RunAction.hh"
 #include "6.1_Run.hh"
 
-MyRunAction::MyRunAction(MyDetectorConstruction * det, MyPrimaryGenerator * kin) : fDetector(det), fPrimary(kin)
+MyRunAction::MyRunAction()
 {
     G4AnalysisManager * analysisManager = G4AnalysisManager::Instance();
     
@@ -37,23 +37,25 @@ MyRunAction::~MyRunAction(){}
 
 void MyRunAction::BeginOfRunAction(const G4Run * run)
 {
+    const MyPrimaryGenerator * primaryGenerator = static_cast < const MyPrimaryGenerator *> (G4RunManager::GetRunManager() -> GetUserPrimaryGeneratorAction()); 
+
     G4AnalysisManager * analysisManager = G4AnalysisManager::Instance();
     G4int runID = run -> GetRunID();
     std::stringstream strRunID;
     strRunID << runID;
     analysisManager -> OpenFile("Output" + strRunID.str() + ".root");
 
-    if (fPrimary) 
+    if (primaryGenerator) 
     { 
-        G4ParticleDefinition * particle = fPrimary -> GetParticleGun() -> GetParticleDefinition();
-        G4double energy = fPrimary -> GetParticleGun() -> GetParticleEnergy();
+        G4ParticleDefinition * particle = primaryGenerator -> GetParticleGun() -> GetParticleDefinition();
+        G4double energy                 = primaryGenerator -> GetParticleGun() -> GetParticleEnergy();
         fRun -> SetPrimary(particle, energy);
     }
 }
 
 G4Run * MyRunAction::GenerateRun()
 { 
-    fRun = new Run(fDetector); 
+    fRun = new Run(); 
     return fRun;
 }
 
