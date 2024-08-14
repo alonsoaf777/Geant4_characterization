@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.icc": "cpp",
+        "line": "cpp",
+        "new": "cpp",
+        "regex": "cpp",
+        "sstream": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
