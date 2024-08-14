@@ -77,12 +77,21 @@ https://www.msesupplies.com/products/pbwo4-crystals-lead-tungstate
 # Wolframium characterization
 
 0.01 - 0.03 keV
+
         G4double targetThickness = 80 * nm;
+
 25 - 100 keV
+
      G4double targetThickness = 0.1 * mm;
+
 100 - 200 keV
+
         G4double targetThickness = 1 * mm;
+
 200 - 300 keV
+
         G4double targetThickness = 5 * mm;
+
 300 - 432.9451
+
         G4double targetThickness = 13 * mm;
