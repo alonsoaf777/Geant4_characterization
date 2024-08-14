@@ -1,11 +1,14 @@
 # a simple test run
 /run/initialize
 
+/det/setTargetThickness 80 nm
 /gun/energy 0.01 keV
 /run/beamOn 1000
 
-/gun/energy 1.0 keV
+/det/setTargetThickness 0.1 mm
+/gun/energy 30.0 keV
 /run/beamOn 1000
 
+/det/setTargetThickness 1.0 mm
 /gun/energy 100.0 keV
 /run/beamOn 1000
