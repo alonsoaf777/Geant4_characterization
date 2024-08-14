@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\include\\DetectorConstruction.hh||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:G4-PCM\\include\\DetectorConstruction.hh||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\src\\DetectorConstruction.cc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:G4-PCM\\src\\DetectorConstruction.cc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\src\\PrimaryGeneratorAction.cc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:G4-PCM\\src\\PrimaryGeneratorAction.cc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:G4-PCM\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,12 +35,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DetectorConstruction.hh",
+              "DocumentMoniker": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\include\\DetectorConstruction.hh",
+              "RelativeDocumentMoniker": "G4-PCM\\include\\DetectorConstruction.hh",
+              "ToolTip": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\include\\DetectorConstruction.hh",
+              "RelativeToolTip": "G4-PCM\\include\\DetectorConstruction.hh",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-14T18:17:26.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\README.md",
+              "RelativeDocumentMoniker": "G4-PCM\\README.md",
+              "ToolTip": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\README.md",
+              "RelativeToolTip": "G4-PCM\\README.md",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-08-14T18:04:43.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PrimaryGeneratorAction.cc",
+              "DocumentMoniker": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\src\\PrimaryGeneratorAction.cc",
+              "RelativeDocumentMoniker": "G4-PCM\\src\\PrimaryGeneratorAction.cc",
+              "ToolTip": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\src\\PrimaryGeneratorAction.cc",
+              "RelativeToolTip": "G4-PCM\\src\\PrimaryGeneratorAction.cc",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAACQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-14T17:44:33.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DetectorConstruction.cc",
               "DocumentMoniker": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\src\\DetectorConstruction.cc",
               "RelativeDocumentMoniker": "G4-PCM\\src\\DetectorConstruction.cc",
               "ToolTip": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\src\\DetectorConstruction.cc",
               "RelativeToolTip": "G4-PCM\\src\\DetectorConstruction.cc",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAwwFYAAAAkAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAwwBAAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-14T17:27:20.609Z",
               "EditorCaption": ""

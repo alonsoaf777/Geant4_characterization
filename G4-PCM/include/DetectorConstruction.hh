@@ -1,24 +1,27 @@
-#ifndef G4_PCM_DETECTOR_CONSTRUCTION_H
-#define G4_PCM_DETECTOR_CONSTRUCTION_H 1
+#ifndef DetectorConstruction_hh
+#define DetectorConstruction_hh
 
 #include "G4VUserDetectorConstruction.hh"
+#include "G4UIcmdWithADoubleAndUnit.hh" // Para comandos de macro
 
-namespace G4_PCM
+class G4VPhysicalVolume;
+class G4LogicalVolume;
+class G4Material;
+class DetectorConstructionMessenger;
+
+class DetectorConstruction : public G4VUserDetectorConstruction
 {
-	class DetectorConstruction : public G4VUserDetectorConstruction
-	{
-	public:
-		DetectorConstruction() = default;
-		~DetectorConstruction() override = default;
+public:
+    DetectorConstruction();
+    virtual ~DetectorConstruction();
 
-		G4VPhysicalVolume* Construct() override;
+    virtual G4VPhysicalVolume* Construct();
+    void SetTargetThickness(G4double thickness);
 
-		G4LogicalVolume* GetGammaDetector() const { return fGammaDetector; }
+private:
+    DetectorConstructionMessenger* fDetectorMessenger;
+    G4LogicalVolume* fGammaDetector;
+    G4double fTargetThickness; // Almacena el grosor del objetivo
+};
 
-	private:
-		G4LogicalVolume* fGammaDetector = nullptr;
-	};
-}
-
-
-#endif
+#endif // DetectorConstruction_hh
