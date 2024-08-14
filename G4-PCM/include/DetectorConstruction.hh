@@ -2,9 +2,12 @@
 #define G4_PCM_DETECTOR_CONSTRUCTION_H 1
 
 #include "G4VUserDetectorConstruction.hh"
+#include "G4SystemOfUnits.hh" // Asegúrate de incluir esto
 
 namespace G4_PCM
 {
+    class DetectorConstructionMessenger;
+
     class DetectorConstruction : public G4VUserDetectorConstruction
     {
     public:
@@ -13,12 +16,14 @@ namespace G4_PCM
 
         G4VPhysicalVolume* Construct() override;
 
+        void SetTargetThickness(G4double thickness);
+
         G4LogicalVolume* GetGammaDetector() const { return fGammaDetector; }
-        void SetTargetThickness(G4double thickness) { fTargetThickness = thickness; }
 
     private:
         G4LogicalVolume* fGammaDetector = nullptr;
-        G4double fTargetThickness;  // Thickness of the target
+        G4double targetThickness = 80 * nm; // Asegúrate de usar unidades aquí
+        DetectorConstructionMessenger* fDetectorMessenger;
     };
 }
 
