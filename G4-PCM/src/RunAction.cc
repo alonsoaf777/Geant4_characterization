@@ -1,76 +1,57 @@
-
 #include "RunAction.hh"
 #include "G4ThreeVector.hh"
 #include "G4UnitsTable.hh"
-#include "G4Run.hh" // This is to access the run number
-
+#include "G4Run.hh"
+#include "G4AnalysisManager.hh"
 
 namespace G4_PCM {
-	RunAction::RunAction() {
+    RunAction::RunAction() {
+        // Accede al análisis manager
+        auto analysisManager = G4AnalysisManager::Instance();
 
-		// access analysis manager
-		auto analysisManager = G4AnalysisManager::Instance();
+        // Configuraciones por defecto
+        analysisManager->SetDefaultFileType("root");
+        analysisManager->SetNtupleMerging(true);
+        analysisManager->SetVerboseLevel(4);
 
-		// set default settings
-		analysisManager->SetDefaultFileType("root");
-		analysisManager->SetNtupleMerging(true);
-		analysisManager->SetVerboseLevel(4); // It was 0
-		// analysisManager->SetFileName("NTuples");
+        // Crear nTuple para almacenar datos
+        analysisManager->CreateNtuple("G4_PCM", "Hits");
+        analysisManager->CreateNtupleDColumn("Energy");     // id = 0
+        analysisManager->CreateNtupleDColumn("PositionX");  // id = 1
+        analysisManager->CreateNtupleDColumn("PositionY");  // id = 2
+        analysisManager->CreateNtupleDColumn("PositionZ");  // id = 3
+        analysisManager->FinishNtuple();
+    }
 
-		// create nTuple to store the data:
-		analysisManager->CreateNtuple("G4_PCM", "Hits");
-		// The letters D, I, S, F correspond to types
-		analysisManager->CreateNtupleDColumn("Energy"); //   id = 0
-		analysisManager->CreateNtupleDColumn("PositionX"); //id = 1
-		analysisManager->CreateNtupleDColumn("PositionY"); //id = 2
-		analysisManager->CreateNtupleDColumn("PositionZ"); //id = 3
-		analysisManager->FinishNtuple();
+    RunAction::~RunAction() {}
 
-	}
+    void RunAction::BeginOfRunAction(const G4Run* aRun) {
+        // Accede al análisis manager
+        auto analysisManager = G4AnalysisManager::Instance();
 
-	RunAction::~RunAction() {
-	}
+        // Obtén el número de la corrida y establece el nombre del archivo
+        G4int runNumber = aRun->GetRunID();
+        G4String fileName = "NTuples_Run" + std::to_string(runNumber);
 
-	void RunAction::BeginOfRunAction(const G4Run* aRun) {
-		// start time
-		fTimer.Start();
+        // Establece el nombre del archivo y abre el archivo
+        analysisManager->SetFileName(fileName);
+        analysisManager->OpenFile();
 
-		auto analysisManager = G4AnalysisManager::Instance();
+        G4cout << "ROOT file opened for run: " << runNumber << G4endl;
+    }
 
-		// Get the run number
-		G4int runNumber = aRun->GetRunID();
+    void RunAction::EndOfRunAction(const G4Run* aRun) {
+        auto analysisManager = G4AnalysisManager::Instance();
 
-		// Set the file name including the run number
-		G4String fileName = "NTuples_Run" + std::to_string(runNumber);
-		analysisManager->SetFileName(fileName);
+        // Escribe y cierra el archivo ROOT
+        analysisManager->Write();
+        analysisManager->CloseFile();
 
-		// Open the file
-		analysisManager->OpenFile();
-	}
+        G4cout << "ROOT file closed for run: " << aRun->GetRunID() << G4endl;
+    }
 
-	void RunAction::EndOfRunAction(const G4Run* aRun) {
-
-		auto analysisManager = G4AnalysisManager::Instance();
-
-		// write to output file
-		analysisManager->Write();
-		analysisManager->CloseFile();
-
-		// end time
-		fTimer.Stop();
-
-		// print out the time it took
-		PrintTime();
-	}
-
-	void RunAction::PrintTime() {
-		auto time = fTimer.GetRealElapsed();
-
-		G4cout
-			<< "Elapsed time: "
-			<< time
-			<< " Seconds."
-			<< G4endl;
-
-	}
+    void RunAction::PrintTime() {
+        auto time = fTimer.GetRealElapsed();
+        G4cout << "Elapsed time: " << time << " Seconds." << G4endl;
+    }
 }

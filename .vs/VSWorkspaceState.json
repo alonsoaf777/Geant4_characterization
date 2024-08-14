@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\G4-PCM",
+    "\\G4-PCM\\include",
+    "\\G4-PCM\\mac_files",
+    "\\G4-PCM\\src"
   ],
-  "SelectedNode": "\\C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git",
+  "SelectedNode": "\\G4-PCM\\src\\EventAction.cc",
   "PreviewInSolutionExplorer": false
 }
