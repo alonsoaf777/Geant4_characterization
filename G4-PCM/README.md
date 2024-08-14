@@ -95,3 +95,6 @@ https://www.msesupplies.com/products/pbwo4-crystals-lead-tungstate
 300 - 432.9451
 
         G4double targetThickness = 13 * mm;
+
+
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
