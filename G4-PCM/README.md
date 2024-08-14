@@ -88,10 +88,6 @@ https://www.msesupplies.com/products/pbwo4-crystals-lead-tungstate
 
         G4double targetThickness = 120 * nm;
 
-0.05 - 0.1 keV
-
-        G4double targetThickness = 250 * nm;
-
 0.1 - 0.9 keV
 
         G4double targetThickness = 280 * nm;
