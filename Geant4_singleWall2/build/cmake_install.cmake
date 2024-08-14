@@ -1,4 +1,4 @@
-# Install script for directory: /home/alosnamon/Geant4_singleWall
+# Install script for directory: /home/alosnamon/Geant4_characterization-main/Geant4_singleWall2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/alosnamon/Geant4_singleWall/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
