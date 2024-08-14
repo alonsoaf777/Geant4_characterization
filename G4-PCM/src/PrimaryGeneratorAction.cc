@@ -34,7 +34,7 @@ namespace G4_PCM
 	void PrimaryGeneratorAction::GeneratePrimaries(G4Event* event)
 	{
 		// Randomize x and y starting point within a 1 mm diameter
-		G4double radius = .5 * mm;
+		G4double radius = 10 * mm; // hay que cambiarlo .5*mm por defecto
 		
 		// generate random x and y positions within that radius
 		double x, y;
