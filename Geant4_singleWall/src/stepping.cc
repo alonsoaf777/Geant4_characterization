@@ -34,6 +34,6 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	run->CountProcesses(procName); 
 	
 	//kill after interaction
-	G4RunManager::GetRunManager()->AbortEvent(); 
+	//G4RunManager::GetRunManager()->AbortEvent(); 
 }
 
