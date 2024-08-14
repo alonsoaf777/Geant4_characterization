@@ -10,7 +10,7 @@ namespace G4_PCM
         fTargetThicknessCmd = new G4UIcmdWithADoubleAndUnit("/det/setTargetThickness", this);
         fTargetThicknessCmd->SetGuidance("Set the target thickness.");
         fTargetThicknessCmd->SetParameterName("thickness", true);
-        fTargetThicknessCmd->SetDefaultValue(80.0);
+        // fTargetThicknessCmd->SetDefaultValue(80.0);
         fTargetThicknessCmd->SetDefaultUnit("nm");
         fTargetThicknessCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
     }
