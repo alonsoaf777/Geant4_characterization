@@ -1,0 +1,848 @@
+/run/initialize
+
+/gun/energy 0.90205545 keV
+/run/beamOn 10000
+
+/gun/energy 0.90656573 keV
+/run/beamOn 10000
+
+/gun/energy 0.91109856 keV
+/run/beamOn 10000
+
+/gun/energy 0.91565405 keV
+/run/beamOn 10000
+
+/gun/energy 0.92023232 keV
+/run/beamOn 10000
+
+/gun/energy 0.92483348 keV
+/run/beamOn 10000
+
+/gun/energy 0.92945765 keV
+/run/beamOn 10000
+
+/gun/energy 0.93410494 keV
+/run/beamOn 10000
+
+/gun/energy 0.93877546 keV
+/run/beamOn 10000
+
+/gun/energy 0.94346934 keV
+/run/beamOn 10000
+
+/gun/energy 0.94818668 keV
+/run/beamOn 10000
+
+/gun/energy 0.95292762 keV
+/run/beamOn 10000
+
+/gun/energy 0.95769226 keV
+/run/beamOn 10000
+
+/gun/energy 0.96248072 keV
+/run/beamOn 10000
+
+/gun/energy 0.96729312 keV
+/run/beamOn 10000
+
+/gun/energy 0.97212959 keV
+/run/beamOn 10000
+
+/gun/energy 0.97699023 keV
+/run/beamOn 10000
+
+/gun/energy 0.98187519 keV
+/run/beamOn 10000
+
+/gun/energy 0.98678456 keV
+/run/beamOn 10000
+
+/gun/energy 0.99171848 keV
+/run/beamOn 10000
+
+/gun/energy 0.99667708 keV
+/run/beamOn 10000
+
+/gun/energy 1.0016605 keV
+/run/beamOn 10000
+
+/gun/energy 1.0066688 keV
+/run/beamOn 10000
+
+/gun/energy 1.0117021 keV
+/run/beamOn 10000
+
+/gun/energy 1.0167606 keV
+/run/beamOn 10000
+
+/gun/energy 1.0218444 keV
+/run/beamOn 10000
+
+/gun/energy 1.0269536 keV
+/run/beamOn 10000
+
+/gun/energy 1.0320884 keV
+/run/beamOn 10000
+
+/gun/energy 1.0372489 keV
+/run/beamOn 10000
+
+/gun/energy 1.0424351 keV
+/run/beamOn 10000
+
+/gun/energy 1.0476473 keV
+/run/beamOn 10000
+
+/gun/energy 1.0528855 keV
+/run/beamOn 10000
+
+/gun/energy 1.0581499 keV
+/run/beamOn 10000
+
+/gun/energy 1.0634407 keV
+/run/beamOn 10000
+
+/gun/energy 1.0687579 keV
+/run/beamOn 10000
+
+/gun/energy 1.0741017 keV
+/run/beamOn 10000
+
+/gun/energy 1.0794722 keV
+/run/beamOn 10000
+
+/gun/energy 1.0848695 keV
+/run/beamOn 10000
+
+/gun/energy 1.0902939 keV
+/run/beamOn 10000
+
+/gun/energy 1.0957454 keV
+/run/beamOn 10000
+
+/gun/energy 1.1012241 keV
+/run/beamOn 10000
+
+/gun/energy 1.1067302 keV
+/run/beamOn 10000
+
+/gun/energy 1.1122639 keV
+/run/beamOn 10000
+
+/gun/energy 1.1178252 keV
+/run/beamOn 10000
+
+/gun/energy 1.1234143 keV
+/run/beamOn 10000
+
+/gun/energy 1.1290314 keV
+/run/beamOn 10000
+
+/gun/energy 1.1346765 keV
+/run/beamOn 10000
+
+/gun/energy 1.1403499 keV
+/run/beamOn 10000
+
+/gun/energy 1.1460517 keV
+/run/beamOn 10000
+
+/gun/energy 1.1517819 keV
+/run/beamOn 10000
+
+/gun/energy 1.1575408 keV
+/run/beamOn 10000
+
+/gun/energy 1.1633285 keV
+/run/beamOn 10000
+
+/gun/energy 1.1691452 keV
+/run/beamOn 10000
+
+/gun/energy 1.1749909 keV
+/run/beamOn 10000
+
+/gun/energy 1.1808659 keV
+/run/beamOn 10000
+
+/gun/energy 1.1867702 keV
+/run/beamOn 10000
+
+/gun/energy 1.192704 keV
+/run/beamOn 10000
+
+/gun/energy 1.1986676 keV
+/run/beamOn 10000
+
+/gun/energy 1.2046609 keV
+/run/beamOn 10000
+
+/gun/energy 1.2106842 keV
+/run/beamOn 10000
+
+/gun/energy 1.2167376 keV
+/run/beamOn 10000
+
+/gun/energy 1.2228213 keV
+/run/beamOn 10000
+
+/gun/energy 1.2289354 keV
+/run/beamOn 10000
+
+/gun/energy 1.2350801 keV
+/run/beamOn 10000
+
+/gun/energy 1.2412555 keV
+/run/beamOn 10000
+
+/gun/energy 1.2474618 keV
+/run/beamOn 10000
+
+/gun/energy 1.2536991 keV
+/run/beamOn 10000
+
+/gun/energy 1.2599676 keV
+/run/beamOn 10000
+
+/gun/energy 1.2662674 keV
+/run/beamOn 10000
+
+/gun/energy 1.2725988 keV
+/run/beamOn 10000
+
+/gun/energy 1.2789618 keV
+/run/beamOn 10000
+
+/gun/energy 1.2853566 keV
+/run/beamOn 10000
+
+/gun/energy 1.2917833 keV
+/run/beamOn 10000
+
+/gun/energy 1.2982423 keV
+/run/beamOn 10000
+
+/gun/energy 1.3047335 keV
+/run/beamOn 10000
+
+/gun/energy 1.3112571 keV
+/run/beamOn 10000
+
+/gun/energy 1.3178134 keV
+/run/beamOn 10000
+
+/gun/energy 1.3244025 keV
+/run/beamOn 10000
+
+/gun/energy 1.3310245 keV
+/run/beamOn 10000
+
+/gun/energy 1.3376796 keV
+/run/beamOn 10000
+
+/gun/energy 1.344368 keV
+/run/beamOn 10000
+
+/gun/energy 1.3510899 keV
+/run/beamOn 10000
+
+/gun/energy 1.3578453 keV
+/run/beamOn 10000
+
+/gun/energy 1.3646345 keV
+/run/beamOn 10000
+
+/gun/energy 1.3714577 keV
+/run/beamOn 10000
+
+/gun/energy 1.378315 keV
+/run/beamOn 10000
+
+/gun/energy 1.3852066 keV
+/run/beamOn 10000
+
+/gun/energy 1.3921326 keV
+/run/beamOn 10000
+
+/gun/energy 1.3990933 keV
+/run/beamOn 10000
+
+/gun/energy 1.4060887 keV
+/run/beamOn 10000
+
+/gun/energy 1.4131192 keV
+/run/beamOn 10000
+
+/gun/energy 1.4201848 keV
+/run/beamOn 10000
+
+/gun/energy 1.4272857 keV
+/run/beamOn 10000
+
+/gun/energy 1.4344221 keV
+/run/beamOn 10000
+
+/gun/energy 1.4415942 keV
+/run/beamOn 10000
+
+/gun/energy 1.4488022 keV
+/run/beamOn 10000
+
+/gun/energy 1.4560462 keV
+/run/beamOn 10000
+
+/gun/energy 1.4633265 keV
+/run/beamOn 10000
+
+/gun/energy 1.4706431 keV
+/run/beamOn 10000
+
+/gun/energy 1.4779963 keV
+/run/beamOn 10000
+
+/gun/energy 1.4853863 keV
+/run/beamOn 10000
+
+/gun/energy 1.4928132 keV
+/run/beamOn 10000
+
+/gun/energy 1.5002773 keV
+/run/beamOn 10000
+
+/gun/energy 1.5077787 keV
+/run/beamOn 10000
+
+/gun/energy 1.5153176 keV
+/run/beamOn 10000
+
+/gun/energy 1.5228942 keV
+/run/beamOn 10000
+
+/gun/energy 1.5305086 keV
+/run/beamOn 10000
+
+/gun/energy 1.5381612 keV
+/run/beamOn 10000
+
+/gun/energy 1.545852 keV
+/run/beamOn 10000
+
+/gun/energy 1.5535812 keV
+/run/beamOn 10000
+
+/gun/energy 1.5613491 keV
+/run/beamOn 10000
+
+/gun/energy 1.5691559 keV
+/run/beamOn 10000
+
+/gun/energy 1.5770017 keV
+/run/beamOn 10000
+
+/gun/energy 1.5848867 keV
+/run/beamOn 10000
+
+/gun/energy 1.5928111 keV
+/run/beamOn 10000
+
+/gun/energy 1.6007752 keV
+/run/beamOn 10000
+
+/gun/energy 1.608779 keV
+/run/beamOn 10000
+
+/gun/energy 1.6168229 keV
+/run/beamOn 10000
+
+/gun/energy 1.624907 keV
+/run/beamOn 10000
+
+/gun/energy 1.6330316 keV
+/run/beamOn 10000
+
+/gun/energy 1.6411967 keV
+/run/beamOn 10000
+
+/gun/energy 1.6494027 keV
+/run/beamOn 10000
+
+/gun/energy 1.6576497 keV
+/run/beamOn 10000
+
+/gun/energy 1.665938 keV
+/run/beamOn 10000
+
+/gun/energy 1.6742677 keV
+/run/beamOn 10000
+
+/gun/energy 1.682639 keV
+/run/beamOn 10000
+
+/gun/energy 1.6910522 keV
+/run/beamOn 10000
+
+/gun/energy 1.6995075 keV
+/run/beamOn 10000
+
+/gun/energy 1.708005 keV
+/run/beamOn 10000
+
+/gun/energy 1.716545 keV
+/run/beamOn 10000
+
+/gun/energy 1.7251278 keV
+/run/beamOn 10000
+
+/gun/energy 1.7337534 keV
+/run/beamOn 10000
+
+/gun/energy 1.7424222 keV
+/run/beamOn 10000
+
+/gun/energy 1.7511343 keV
+/run/beamOn 10000
+
+/gun/energy 1.7598899 keV
+/run/beamOn 10000
+
+/gun/energy 1.7686894 keV
+/run/beamOn 10000
+
+/gun/energy 1.7775328 keV
+/run/beamOn 10000
+
+/gun/energy 1.7864205 keV
+/run/beamOn 10000
+
+/gun/energy 1.7953526 keV
+/run/beamOn 10000
+
+/gun/energy 1.8043294 keV
+/run/beamOn 10000
+
+/gun/energy 1.8088491 keV
+/run/beamOn 10000
+
+/gun/energy 1.809551 keV
+/run/beamOn 10000
+
+/gun/energy 1.813351 keV
+/run/beamOn 10000
+
+/gun/energy 1.8224178 keV
+/run/beamOn 10000
+
+/gun/energy 1.8315299 keV
+/run/beamOn 10000
+
+/gun/energy 1.8406875 keV
+/run/beamOn 10000
+
+/gun/energy 1.8498909 keV
+/run/beamOn 10000
+
+/gun/energy 1.8591404 keV
+/run/beamOn 10000
+
+/gun/energy 1.8684361 keV
+/run/beamOn 10000
+
+/gun/energy 1.8709394 keV
+/run/beamOn 10000
+
+/gun/energy 1.8722607 keV
+/run/beamOn 10000
+
+/gun/energy 1.8777783 keV
+/run/beamOn 10000
+
+/gun/energy 1.8871672 keV
+/run/beamOn 10000
+
+/gun/energy 1.896603 keV
+/run/beamOn 10000
+
+/gun/energy 1.906086 keV
+/run/beamOn 10000
+
+/gun/energy 1.9156165 keV
+/run/beamOn 10000
+
+/gun/energy 1.9251945 keV
+/run/beamOn 10000
+
+/gun/energy 1.9348205 keV
+/run/beamOn 10000
+
+/gun/energy 1.9444946 keV
+/run/beamOn 10000
+
+/gun/energy 1.9542171 keV
+/run/beamOn 10000
+
+/gun/energy 1.9639882 keV
+/run/beamOn 10000
+
+/gun/energy 1.9738081 keV
+/run/beamOn 10000
+
+/gun/energy 1.9836772 keV
+/run/beamOn 10000
+
+/gun/energy 1.9935955 keV
+/run/beamOn 10000
+
+/gun/energy 2.0035635 keV
+/run/beamOn 10000
+
+/gun/energy 2.0135813 keV
+/run/beamOn 10000
+
+/gun/energy 2.0236492 keV
+/run/beamOn 10000
+
+/gun/energy 2.0337675 keV
+/run/beamOn 10000
+
+/gun/energy 2.0439363 keV
+/run/beamOn 10000
+
+/gun/energy 2.054156 keV
+/run/beamOn 10000
+
+/gun/energy 2.0644268 keV
+/run/beamOn 10000
+
+/gun/energy 2.0747489 keV
+/run/beamOn 10000
+
+/gun/energy 2.0851227 keV
+/run/beamOn 10000
+
+/gun/energy 2.0955483 keV
+/run/beamOn 10000
+
+/gun/energy 2.106026 keV
+/run/beamOn 10000
+
+/gun/energy 2.1165562 keV
+/run/beamOn 10000
+
+/gun/energy 2.1271389 keV
+/run/beamOn 10000
+
+/gun/energy 2.1377746 keV
+/run/beamOn 10000
+
+/gun/energy 2.1484635 keV
+/run/beamOn 10000
+
+/gun/energy 2.1592058 keV
+/run/beamOn 10000
+
+/gun/energy 2.1700018 keV
+/run/beamOn 10000
+
+/gun/energy 2.1808519 keV
+/run/beamOn 10000
+
+/gun/energy 2.1917561 keV
+/run/beamOn 10000
+
+/gun/energy 2.2027149 keV
+/run/beamOn 10000
+
+/gun/energy 2.2137285 keV
+/run/beamOn 10000
+
+/gun/energy 2.2247971 keV
+/run/beamOn 10000
+
+/gun/energy 2.2359211 keV
+/run/beamOn 10000
+
+/gun/energy 2.2471007 keV
+/run/beamOn 10000
+
+/gun/energy 2.2583362 keV
+/run/beamOn 10000
+
+/gun/energy 2.2696279 keV
+/run/beamOn 10000
+
+/gun/energy 2.2786505 keV
+/run/beamOn 10000
+
+/gun/energy 2.280976 keV
+/run/beamOn 10000
+
+/gun/energy 2.2833493 keV
+/run/beamOn 10000
+
+/gun/energy 2.2923809 keV
+/run/beamOn 10000
+
+/gun/energy 2.3038428 keV
+/run/beamOn 10000
+
+/gun/energy 2.315362 keV
+/run/beamOn 10000
+
+/gun/energy 2.3269388 keV
+/run/beamOn 10000
+
+/gun/energy 2.3385735 keV
+/run/beamOn 10000
+
+/gun/energy 2.3502664 keV
+/run/beamOn 10000
+
+/gun/energy 2.3620177 keV
+/run/beamOn 10000
+
+/gun/energy 2.3738278 keV
+/run/beamOn 10000
+
+/gun/energy 2.385697 keV
+/run/beamOn 10000
+
+/gun/energy 2.3976254 keV
+/run/beamOn 10000
+
+/gun/energy 2.4096136 keV
+/run/beamOn 10000
+
+/gun/energy 2.4216616 keV
+/run/beamOn 10000
+
+/gun/energy 2.4337699 keV
+/run/beamOn 10000
+
+/gun/energy 2.4459388 keV
+/run/beamOn 10000
+
+/gun/energy 2.4581685 keV
+/run/beamOn 10000
+
+/gun/energy 2.4704593 keV
+/run/beamOn 10000
+
+/gun/energy 2.4828116 keV
+/run/beamOn 10000
+
+/gun/energy 2.4952257 keV
+/run/beamOn 10000
+
+/gun/energy 2.5077018 keV
+/run/beamOn 10000
+
+/gun/energy 2.5202403 keV
+/run/beamOn 10000
+
+/gun/energy 2.5328415 keV
+/run/beamOn 10000
+
+/gun/energy 2.5455057 keV
+/run/beamOn 10000
+
+/gun/energy 2.5582333 keV
+/run/beamOn 10000
+
+/gun/energy 2.5710244 keV
+/run/beamOn 10000
+
+/gun/energy 2.5716555 keV
+/run/beamOn 10000
+
+/gun/energy 2.5781443 keV
+/run/beamOn 10000
+
+/gun/energy 2.5838796 keV
+/run/beamOn 10000
+
+/gun/energy 2.596799 keV
+/run/beamOn 10000
+
+/gun/energy 2.6097829 keV
+/run/beamOn 10000
+
+/gun/energy 2.6228319 keV
+/run/beamOn 10000
+
+/gun/energy 2.635946 keV
+/run/beamOn 10000
+
+/gun/energy 2.6491257 keV
+/run/beamOn 10000
+
+/gun/energy 2.6623714 keV
+/run/beamOn 10000
+
+/gun/energy 2.6756832 keV
+/run/beamOn 10000
+
+/gun/energy 2.6890617 keV
+/run/beamOn 10000
+
+/gun/energy 2.702507 keV
+/run/beamOn 10000
+
+/gun/energy 2.7160195 keV
+/run/beamOn 10000
+
+/gun/energy 2.7295996 keV
+/run/beamOn 10000
+
+/gun/energy 2.7432476 keV
+/run/beamOn 10000
+
+/gun/energy 2.7569638 keV
+/run/beamOn 10000
+
+/gun/energy 2.7707486 keV
+/run/beamOn 10000
+
+/gun/energy 2.7846024 keV
+/run/beamOn 10000
+
+/gun/energy 2.7985254 keV
+/run/beamOn 10000
+
+/gun/energy 2.812518 keV
+/run/beamOn 10000
+
+/gun/energy 2.8140455 keV
+/run/beamOn 10000
+
+/gun/energy 2.8251547 keV
+/run/beamOn 10000
+
+/gun/energy 2.8265806 keV
+/run/beamOn 10000
+
+/gun/energy 2.8407135 keV
+/run/beamOn 10000
+
+/gun/energy 2.8549171 keV
+/run/beamOn 10000
+
+/gun/energy 2.8691917 keV
+/run/beamOn 10000
+
+/gun/energy 2.8835376 keV
+/run/beamOn 10000
+
+/gun/energy 2.8979553 keV
+/run/beamOn 10000
+
+/gun/energy 2.9124451 keV
+/run/beamOn 10000
+
+/gun/energy 2.9270073 keV
+/run/beamOn 10000
+
+/gun/energy 2.9416424 keV
+/run/beamOn 10000
+
+/gun/energy 2.9563506 keV
+/run/beamOn 10000
+
+/gun/energy 2.9711323 keV
+/run/beamOn 10000
+
+/gun/energy 2.985988 keV
+/run/beamOn 10000
+
+/gun/energy 3.0009179 keV
+/run/beamOn 10000
+
+/gun/energy 3.0159225 keV
+/run/beamOn 10000
+
+/gun/energy 3.0310021 keV
+/run/beamOn 10000
+
+/gun/energy 3.0461571 keV
+/run/beamOn 10000
+
+/gun/energy 3.0613879 keV
+/run/beamOn 10000
+
+/gun/energy 3.0766949 keV
+/run/beamOn 10000
+
+/gun/energy 3.0920783 keV
+/run/beamOn 10000
+
+/gun/energy 3.1075387 keV
+/run/beamOn 10000
+
+/gun/energy 3.1230764 keV
+/run/beamOn 10000
+
+/gun/energy 3.1386918 keV
+/run/beamOn 10000
+
+/gun/energy 3.1543853 keV
+/run/beamOn 10000
+
+/gun/energy 3.1701572 keV
+/run/beamOn 10000
+
+/gun/energy 3.186008 keV
+/run/beamOn 10000
+
+/gun/energy 3.201938 keV
+/run/beamOn 10000
+
+/gun/energy 3.2179477 keV
+/run/beamOn 10000
+
+/gun/energy 3.2340374 keV
+/run/beamOn 10000
+
+/gun/energy 3.2502076 keV
+/run/beamOn 10000
+
+/gun/energy 3.2664587 keV
+/run/beamOn 10000
+
+/gun/energy 3.282791 keV
+/run/beamOn 10000
+
+/gun/energy 3.2992049 keV
+/run/beamOn 10000
+
+/gun/energy 3.3157009 keV
+/run/beamOn 10000
+
+/gun/energy 3.3322794 keV
+/run/beamOn 10000
+
+/gun/energy 3.3489408 keV
+/run/beamOn 10000
+
+/gun/energy 3.3656856 keV
+/run/beamOn 10000
+
+/gun/energy 3.382514 keV
+/run/beamOn 10000
+
+/gun/energy 3.3994265 keV
+/run/beamOn 10000
+
+/gun/energy 3.4164237 keV
+/run/beamOn 10000
+
+/gun/energy 3.4335058 keV
+/run/beamOn 10000
+
+/gun/energy 3.4506733 keV
+/run/beamOn 10000
+
+/gun/energy 3.4679267 keV
+/run/beamOn 10000
+
+/gun/energy 3.4852663 keV
+/run/beamOn 10000
+

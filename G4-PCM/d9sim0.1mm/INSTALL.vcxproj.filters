@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\d8sim0.1mm\CMakeFiles\e1fb3f49f650cbd18b565cb36325165e\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E6B78FBA-DDEF-352A-A41C-BB211262B7FE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,32 @@
+# Archivo .mac para energías en el rango 100 - 200 keV
+
+/gun/energy 106.6353 keV
+/run/beamOn 3000
+
+/gun/energy 113.9931 keV
+/run/beamOn 3000
+
+/gun/energy 121.8587 keV
+/run/beamOn 3000
+
+/gun/energy 130.2669 keV
+/run/beamOn 3000
+
+/gun/energy 139.2553 keV
+/run/beamOn 3000
+
+/gun/energy 148.864 keV
+/run/beamOn 3000
+
+/gun/energy 159.1356 keV
+/run/beamOn 3000
+
+/gun/energy 170.1159 keV
+/run/beamOn 3000
+
+/gun/energy 181.8539 keV
+/run/beamOn 3000
+
+/gun/energy 194.4018 keV
+/run/beamOn 3000
+

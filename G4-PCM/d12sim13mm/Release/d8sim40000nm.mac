@@ -1,0 +1,14 @@
+/run/initialize
+
+/gun/energy 20.11215 keV
+/run/beamOn 10000
+
+/gun/energy 21.49988 keV
+/run/beamOn 10000
+
+/gun/energy 22.98338 keV
+/run/beamOn 10000
+
+/gun/energy 24.56923 keV
+/run/beamOn 10000
+
