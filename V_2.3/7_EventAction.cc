@@ -9,7 +9,7 @@ void MyEventAction::EndOfEventAction(const G4Event *)
 { 
     G4cout << "Energy deposition: " << fEDep << G4endl; 
     
-    // G4AnalysisManager * analysisManager = G4AnalysisManager::Instance();
-    // analysisManager -> FillNtupleDColumn(2, 0, fEDep);
-    // analysisManager -> AddNtupleRow(2);
+    G4AnalysisManager * analysisManager = G4AnalysisManager::Instance();
+    analysisManager -> FillNtupleDColumn(2, 0, fEDep);
+    analysisManager -> AddNtupleRow(2);
 }

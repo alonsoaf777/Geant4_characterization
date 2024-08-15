@@ -3,6 +3,8 @@
 #include "6.1_Run.hh"
 #include "8_SteppingAction.hh"
 
+extern int arguments;
+
 MySteppingAction::MySteppingAction(MyEventAction * eventAction) { fEventAction = eventAction; }
 MySteppingAction::~MySteppingAction() {}
 
@@ -19,5 +21,9 @@ void MySteppingAction::UserSteppingAction(const G4Step * step)
     G4String procName = endPoint -> GetProcessDefinedStep() -> GetProcessName();
     Run * run = static_cast <Run *> (G4RunManager::GetRunManager() -> GetNonConstCurrentRun()); 
     run -> CountProcesses(procName);
-    G4RunManager::GetRunManager() -> AbortEvent();  // kill event after first interaction
+
+    if (arguments == 2 || arguments == 4) 
+    {
+        G4RunManager::GetRunManager() -> AbortEvent();  // kill event after first interaction
+    }
 }

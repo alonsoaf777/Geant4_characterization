@@ -19,7 +19,6 @@ class Run : public G4Run
     void SetPrimary(G4ParticleDefinition * particle, G4double energy);
     void CountProcesses(G4String procName);
     void Merge(const G4Run *) override;
-    void BeginOfRun(const G4Run *);
     void EndOfRun();
 
   private:

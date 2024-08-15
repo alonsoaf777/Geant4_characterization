@@ -11,23 +11,23 @@
 #include "3.0_DetectorConstruction.hh"
 #include "4_ActionInitialization.hh"
 
-int isArgcOne = false;
+int arguments = 0;
 
 int main(int argc, char** argv)
 {
-    isArgcOne = (argc);
+    arguments = (argc);
 
     G4RunManager * runManager;
 
-    if (argc == 1) 
+    if (argc < 3) 
     {
         runManager = new G4RunManager();
-        G4cout << "-----Running in single-threaded mode-----" << G4endl;
+        G4cout << " ----------- Running in single-threaded mode ---------" << G4endl;
     } 
     else 
     {
         runManager = new G4MTRunManager();
-        G4cout << "-----Running in multi-threaded mode------" << G4endl;
+        G4cout << " ----------- Running in multi-threaded mode ----------" << G4endl;
     }
 
     runManager -> SetUserInitialization(new MyDetectorConstruction);
@@ -40,7 +40,7 @@ int main(int argc, char** argv)
 
     G4UIExecutive * UI = 0;
     
-    if(argc == 1)
+    if(argc < 3)
     {
         UI = new G4UIExecutive(argc, argv);
         UImanager -> ApplyCommand("/control/execute Visualization.mac");
