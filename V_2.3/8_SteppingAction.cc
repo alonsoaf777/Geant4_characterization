@@ -24,6 +24,7 @@ void MySteppingAction::UserSteppingAction(const G4Step * step)
 
     if (arguments == 2 || arguments == 4) 
     {
+        
         G4RunManager::GetRunManager() -> AbortEvent();  // kill event after first interaction
     }
 }

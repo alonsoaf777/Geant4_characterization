@@ -1,0 +1,11 @@
+/run/numberOfThreads 9
+/run/initialize
+#
+/gun/energy 0.00613050000 keV
+/run/beamOn 10000
+
+/gun/energy 0.00622200000 keV
+/run/beamOn 10000
+
+/gun/energy 0.01069000000 keV
+/run/beamOn 10000
