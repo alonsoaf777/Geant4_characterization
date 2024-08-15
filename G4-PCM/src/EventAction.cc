@@ -15,7 +15,7 @@ namespace G4_PCM {
 	
 	// setting energy and position
 	void EventAction::AddEnergy(G4double e) { fEnergy += e; }
-	void EventAction::SetPosition(G4ThreeVector p) { fPosition = p; }
+	// void EventAction::SetPosition(G4ThreeVector p) { fPosition = p; } // Checar esto
 
 	void EventAction::EndOfEventAction(const G4Event* anEvent) {
 		// if there was any energy deposited, tell the analysis manager.
@@ -26,14 +26,14 @@ namespace G4_PCM {
 			// add all the info to the analysis nTuples
 			// set the column id's (see runaction)
 			G4int energyColumnId = 0;
-			G4int posXColumnId = 1;
-			G4int posYColumnId = 2;
-			G4int posZColumnId = 3;
+			// G4int posXColumnId = 1;
+			// G4int posYColumnId = 2;
+			// G4int posZColumnId = 3;
 
 			analysisManager->FillNtupleDColumn(energyColumnId, fEnergy/keV);
-			analysisManager->FillNtupleDColumn(posXColumnId, fPosition.getX());
-			analysisManager->FillNtupleDColumn(posYColumnId, fPosition.getY());
-			analysisManager->FillNtupleDColumn(posZColumnId, fPosition.getZ());
+			// analysisManager->FillNtupleDColumn(posXColumnId, fPosition.getX());
+			// analysisManager->FillNtupleDColumn(posYColumnId, fPosition.getY());
+			// analysisManager->FillNtupleDColumn(posZColumnId, fPosition.getZ());
 
 			// finally, go to the next ntuple row
 			analysisManager->AddNtupleRow();
@@ -48,10 +48,10 @@ namespace G4_PCM {
 		G4cout
 			<< "Energy: "
 			<< G4BestUnit(fEnergy, "Energy")
-			<< "Position: "
-			<< G4BestUnit(fPosition.getX(), "Length")
-			<< G4BestUnit(fPosition.getY(), "Length")
-			<< G4BestUnit(fPosition.getZ(), "Length")
+			// << "Position: "
+			// << G4BestUnit(fPosition.getX(), "Length")
+			// << G4BestUnit(fPosition.getY(), "Length")
+			// << G4BestUnit(fPosition.getZ(), "Length")
 			<< G4endl;
 	}
 

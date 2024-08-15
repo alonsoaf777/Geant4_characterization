@@ -21,9 +21,9 @@ namespace G4_PCM {
 		analysisManager->CreateNtuple("G4_PCM", "Hits");
 		// The letters D, I, S, F correspond to types
 		analysisManager->CreateNtupleDColumn("Energy"); //   id = 0
-		analysisManager->CreateNtupleDColumn("PositionX"); //id = 1
-		analysisManager->CreateNtupleDColumn("PositionY"); //id = 2
-		analysisManager->CreateNtupleDColumn("PositionZ"); //id = 3
+		// analysisManager->CreateNtupleDColumn("PositionX"); //id = 1
+		// analysisManager->CreateNtupleDColumn("PositionY"); //id = 2
+		// analysisManager->CreateNtupleDColumn("PositionZ"); //id = 3
 		analysisManager->FinishNtuple();
 
 	}
