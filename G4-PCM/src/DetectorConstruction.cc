@@ -84,7 +84,7 @@ namespace G4_PCM
 
         G4double innerTargetRadius = 0.0;
         G4double outerTargetRadius = 1.5 * cm;
-        G4double targetThickness = 13 * mm;
+        G4double targetThickness = 60 * nm;
 
         G4Tubs* solidTarget = new G4Tubs("Target",
             innerTargetRadius,

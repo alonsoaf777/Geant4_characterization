@@ -1,5 +1,2 @@
 ﻿  EventAction.cc
-  RunAction.cc
-  Generating Code...
-SteppingAction.obj : error LNK2019: unresolved external symbol "public: void __cdecl G4_PCM::EventAction::SetPosition(class CLHEP::Hep3Vector)" (?SetPosition@EventAction@G4_PCM@@QEAAXVHep3Vector@CLHEP@@@Z) referenced in function "public: virtual void __cdecl G4_PCM::SteppingAction::UserSteppingAction(class G4Step const *)" (?UserSteppingAction@SteppingAction@G4_PCM@@UEAAXPEBVG4Step@@@Z)
-C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\d13sim13mm\Release\PCM.exe : fatal error LNK1120: 1 unresolved externals
+  PCM.vcxproj -> C:\Users\conej\Documents\Universidad\Geant4\Projects\Git\G4-PCM\d13sim13mm\Release\PCM.exe
