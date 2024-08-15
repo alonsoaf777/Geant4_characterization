@@ -5,6 +5,7 @@
 #include "G4SystemOfUnits.hh"
 #include "G4UnitsTable.hh"
 #include "G4EmCalculator.hh"
+#include "G4AnalysisManager.hh"
 #include "G4Gamma.hh"
 #include "globals.hh"
 #include <map>

@@ -11,7 +11,7 @@ MyDetectorConstruction::MyDetectorConstruction()
 	
 	nCols = 30; 
 	nRows = 30;
-	singleWallZ =  1.414*cm / 2;
+	singleWallZ =  1.4*cm;
 	//Position of the target to access it in the generator
 	targetPosition = G4ThreeVector(0., -10*cm, 5*cm);
 	
@@ -44,7 +44,8 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	// ---------------------- Geometry
 	G4double worldSizeXYZ = 1*m / 2;
 	G4double singleWallXY = 25*cm / 2; 
-	
+	G4double singleWallZ2 = singleWallZ / 2; 
+	//singleWallZ =
 	G4double detectorZ = 2*cm / 2; 
 	// Construction
 	//World
@@ -53,15 +54,12 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	physWorld = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicWorld, "physWorld", 0, false, 0, true); 
 	
 	//Wall
-	solidWall = new G4Box("SolidWall", singleWallXY, singleWallXY, singleWallZ); 
+	solidWall = new G4Box("SolidWall", singleWallXY, singleWallXY, singleWallZ2); 
 	logicWall = new G4LogicalVolume(solidWall, wallMat, "logicWall"); 
 	physWall = new G4PVPlacement(0, targetPosition, logicWall, "physWall", logicWorld, false, 0, true);
 	//ScoringVol
 	fScoringVolume = logicWall; 
-	
-	//Thickness 
-	targetThickness = singleWallZ * 2; 
-	 
+		 
 	//Detector
 	solidDetector = new G4Box("SolidDetector", worldSizeXYZ / nRows, worldSizeXYZ / nCols, detectorZ); 
 	logicDetector = new G4LogicalVolume(solidDetector, detectorMat, "logicDetector"); 

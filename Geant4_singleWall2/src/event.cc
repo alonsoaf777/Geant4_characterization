@@ -1,5 +1,8 @@
 #include "event.hh"
 
+extern G4double massicCS; 
+extern G4double CrossSection; 
+
 MyEventAction::MyEventAction(MyRunAction*)
 {
 	fEdep = 0.; 
@@ -22,4 +25,7 @@ void MyEventAction::EndOfEventAction(const G4Event*)
 	
 	man->FillNtupleDColumn(0, 0, fEdep); 
 	man->AddNtupleRow(0); 
+	
+	
+	
 }

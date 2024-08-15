@@ -4,6 +4,7 @@
 #include "G4VModularPhysicsList.hh"
 #include "G4EmStandardPhysics.hh"
 #include "G4SystemOfUnits.hh"
+#include "G4UnitsTable.hh"
 #include "G4VPhysicsConstructor.hh"
 #include "G4ProcessManager.hh"
 #include "G4ParticleDefinition.hh"

@@ -19,8 +19,8 @@ MyRunAction::MyRunAction()
 	
 	//Create histogram for cross section
 	man->CreateNtuple("CrossSection", "CrossSection");
-	man->CreateNtupleDColumn("Cross/Volume cm^-1");
-	man->CreateNtupleDColumn("Cross/Mass ");
+	man->CreateNtupleDColumn("Volume");
+	man->CreateNtupleDColumn("Mass");
 	man->FinishNtuple(2); 
 	 
 }
