@@ -15,7 +15,7 @@ namespace G4_PCM {
 	
 	// setting energy and position
 	void EventAction::AddEnergy(G4double e) { fEnergy += e; }
-	// void EventAction::SetPosition(G4ThreeVector p) { fPosition = p; } // Checar esto
+	void EventAction::SetPosition(G4ThreeVector p) { fPosition = p; } // Checar esto
 
 	void EventAction::EndOfEventAction(const G4Event* anEvent) {
 		// if there was any energy deposited, tell the analysis manager.
