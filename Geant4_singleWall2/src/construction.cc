@@ -27,7 +27,7 @@ void MyDetectorConstruction::DefineMaterials()
 	// --------------------- Materials
 	G4NistManager *nist = G4NistManager::Instance(); 
 	// Element for the wall
-	wallMat = nist->FindOrBuildMaterial("G4_W"); 
+	wallMat = nist->FindOrBuildMaterial("G4_W"); //versión con wolframio
 	//Material for the detector
 	detectorMat = nist->FindOrBuildMaterial("G4_Si"); 
 	//Material for world volume
