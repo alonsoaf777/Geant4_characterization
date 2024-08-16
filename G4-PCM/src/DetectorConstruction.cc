@@ -54,4 +54,9 @@ namespace G4_PCM
         G4RunManager::GetRunManager()->GeometryHasBeenModified();
         G4RunManager::GetRunManager()->ReinitializeGeometry();
     }
+
+    G4LogicalVolume* DetectorConstruction::GetGammaDetector() const
+    {
+        return fGammaDetector;
+    }
 }
