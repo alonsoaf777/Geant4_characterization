@@ -1,4 +1,0 @@
-C:/Users/conej/Documents/Universidad/Geant4/Projects/Git/G4-PCM/d13sim13mm/CMakeFiles/PCM.dir
-C:/Users/conej/Documents/Universidad/Geant4/Projects/Git/G4-PCM/d13sim13mm/CMakeFiles/INSTALL.dir
-C:/Users/conej/Documents/Universidad/Geant4/Projects/Git/G4-PCM/d13sim13mm/CMakeFiles/ALL_BUILD.dir
-C:/Users/conej/Documents/Universidad/Geant4/Projects/Git/G4-PCM/d13sim13mm/CMakeFiles/ZERO_CHECK.dir
