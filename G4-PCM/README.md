@@ -1,6 +1,7 @@
 # G4-PCM
 Author: [Juan Pablo Solís Ruiz] 7/26/2023
 
+RECUERDA AÑADIR CONTADOR DE HITS PARA EL MAPEO
 
 # Overview
 
