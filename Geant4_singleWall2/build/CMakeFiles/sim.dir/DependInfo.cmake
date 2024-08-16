@@ -1,54 +1,31 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/sim.cc" "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/build/CMakeFiles/sim.dir/sim.cc.o"
-  "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/src/action.cc" "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/build/CMakeFiles/sim.dir/src/action.cc.o"
-  "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/src/construction.cc" "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/build/CMakeFiles/sim.dir/src/construction.cc.o"
-  "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/src/crossrun.cc" "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/build/CMakeFiles/sim.dir/src/crossrun.cc.o"
-  "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/src/detector.cc" "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/build/CMakeFiles/sim.dir/src/detector.cc.o"
-  "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/src/event.cc" "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/build/CMakeFiles/sim.dir/src/event.cc.o"
-  "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/src/generator.cc" "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/build/CMakeFiles/sim.dir/src/generator.cc.o"
-  "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/src/physics.cc" "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/build/CMakeFiles/sim.dir/src/physics.cc.o"
-  "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/src/run.cc" "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/build/CMakeFiles/sim.dir/src/run.cc.o"
-  "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/src/stepping.cc" "/home/alosnamon/Geant4_characterization-main/Geant4_singleWall2/build/CMakeFiles/sim.dir/src/stepping.cc.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "G4LIB_BUILD_DLL"
-  "G4UI_USE_QT"
-  "G4VIS_USE_OPENGLQT"
-  "G4VIS_USE_OPENGLX"
-  "G4VIS_USE_RAYTRACERX"
-  "G4VIS_USE_TOOLSSG_QT_GLES"
-  "G4VIS_USE_TOOLSSG_QT_ZB"
-  "G4VIS_USE_TOOLSSG_X11_GLES"
-  "PTL_BUILD_DLL"
-  "QT_CORE_LIB"
-  "QT_GUI_LIB"
-  "QT_NO_DEBUG"
-  "QT_OPENGL_LIB"
-  "QT_WIDGETS_LIB"
   )
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../include"
-  "/usr/local/include/Geant4"
-  "/usr/include/x86_64-linux-gnu/qt5"
-  "/usr/include/x86_64-linux-gnu/qt5/QtGui"
-  "/usr/include/x86_64-linux-gnu/qt5/QtCore"
-  "/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"
-  "/usr/include/x86_64-linux-gnu/qt5/QtOpenGL"
-  "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/Daniel/Documents/ITESM/Séptimo Semestre/geant4-v11.2.2/My_Geant4_Simulations/Repositorio/Geant4_singleWall2/sim.cc" "CMakeFiles/sim.dir/sim.cc.o" "gcc" "CMakeFiles/sim.dir/sim.cc.o.d"
+  "/Users/Daniel/Documents/ITESM/Séptimo Semestre/geant4-v11.2.2/My_Geant4_Simulations/Repositorio/Geant4_singleWall2/src/action.cc" "CMakeFiles/sim.dir/src/action.cc.o" "gcc" "CMakeFiles/sim.dir/src/action.cc.o.d"
+  "/Users/Daniel/Documents/ITESM/Séptimo Semestre/geant4-v11.2.2/My_Geant4_Simulations/Repositorio/Geant4_singleWall2/src/construction.cc" "CMakeFiles/sim.dir/src/construction.cc.o" "gcc" "CMakeFiles/sim.dir/src/construction.cc.o.d"
+  "/Users/Daniel/Documents/ITESM/Séptimo Semestre/geant4-v11.2.2/My_Geant4_Simulations/Repositorio/Geant4_singleWall2/src/crossrun.cc" "CMakeFiles/sim.dir/src/crossrun.cc.o" "gcc" "CMakeFiles/sim.dir/src/crossrun.cc.o.d"
+  "/Users/Daniel/Documents/ITESM/Séptimo Semestre/geant4-v11.2.2/My_Geant4_Simulations/Repositorio/Geant4_singleWall2/src/detector.cc" "CMakeFiles/sim.dir/src/detector.cc.o" "gcc" "CMakeFiles/sim.dir/src/detector.cc.o.d"
+  "/Users/Daniel/Documents/ITESM/Séptimo Semestre/geant4-v11.2.2/My_Geant4_Simulations/Repositorio/Geant4_singleWall2/src/event.cc" "CMakeFiles/sim.dir/src/event.cc.o" "gcc" "CMakeFiles/sim.dir/src/event.cc.o.d"
+  "/Users/Daniel/Documents/ITESM/Séptimo Semestre/geant4-v11.2.2/My_Geant4_Simulations/Repositorio/Geant4_singleWall2/src/generator.cc" "CMakeFiles/sim.dir/src/generator.cc.o" "gcc" "CMakeFiles/sim.dir/src/generator.cc.o.d"
+  "/Users/Daniel/Documents/ITESM/Séptimo Semestre/geant4-v11.2.2/My_Geant4_Simulations/Repositorio/Geant4_singleWall2/src/physics.cc" "CMakeFiles/sim.dir/src/physics.cc.o" "gcc" "CMakeFiles/sim.dir/src/physics.cc.o.d"
+  "/Users/Daniel/Documents/ITESM/Séptimo Semestre/geant4-v11.2.2/My_Geant4_Simulations/Repositorio/Geant4_singleWall2/src/run.cc" "CMakeFiles/sim.dir/src/run.cc.o" "gcc" "CMakeFiles/sim.dir/src/run.cc.o.d"
+  "/Users/Daniel/Documents/ITESM/Séptimo Semestre/geant4-v11.2.2/My_Geant4_Simulations/Repositorio/Geant4_singleWall2/src/stepping.cc" "CMakeFiles/sim.dir/src/stepping.cc.o" "gcc" "CMakeFiles/sim.dir/src/stepping.cc.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
