@@ -3,7 +3,6 @@
 
 #include "G4UImessenger.hh"
 #include "G4UIcmdWithADoubleAndUnit.hh"
-#include "G4UIcmdWithoutParameter.hh"
 
 namespace G4_PCM
 {
@@ -19,8 +18,7 @@ namespace G4_PCM
 
     private:
         DetectorConstruction* fDetectorConstruction;
-        G4UIcmdWithADoubleAndUnit* fTargetThicknessCmd;
-        G4UIcmdWithoutParameter* fUpdateGeometryCmd;  // Nuevo comando
+        G4UIcmdWithADoubleAndUnit* fSetTargetThicknessCmd;
     };
 }
 

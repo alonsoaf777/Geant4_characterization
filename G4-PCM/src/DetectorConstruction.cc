@@ -10,8 +10,11 @@
 namespace G4_PCM
 {
     DetectorConstruction::DetectorConstruction()
+        : G4VUserDetectorConstruction(),
+        fGammaDetector(nullptr),
+        targetThickness(80 * nm),
+        fDetectorMessenger(new DetectorConstructionMessenger(this))
     {
-        fDetectorMessenger = new DetectorConstructionMessenger(this);
     }
 
     DetectorConstruction::~DetectorConstruction()
@@ -22,24 +25,15 @@ namespace G4_PCM
     G4VPhysicalVolume* DetectorConstruction::Construct()
     {
         G4NistManager* nist = G4NistManager::Instance();
+        G4Material* air = nist->FindOrBuildMaterial("G4_AIR");
 
-        // Definir un mundo sencillo
-        G4double world_sizeXYZ = 1.2 * targetThickness;
-        G4Material* world_mat = nist->FindOrBuildMaterial("G4_AIR");
-
-        G4Box* solidWorld = new G4Box("World", 0.5 * world_sizeXYZ, 0.5 * world_sizeXYZ, 0.5 * world_sizeXYZ);
-
-        G4LogicalVolume* logicWorld = new G4LogicalVolume(solidWorld, world_mat, "World");
+        G4Box* solidWorld = new G4Box("World", 1.0 * m, 1.0 * m, 1.0 * m);
+        G4LogicalVolume* logicWorld = new G4LogicalVolume(solidWorld, air, "World");
 
         G4VPhysicalVolume* physWorld = new G4PVPlacement(0, G4ThreeVector(), logicWorld, "World", 0, false, 0, true);
 
-        // Detector de gamma (ejemplo sencillo)
-        G4Material* detector_mat = nist->FindOrBuildMaterial("G4_Si");
-        G4Box* solidDetector = new G4Box("GammaDetector", 0.5 * targetThickness, 0.5 * targetThickness, 0.5 * targetThickness);
-
-        fGammaDetector = new G4LogicalVolume(solidDetector, detector_mat, "GammaDetector");
-
-        new G4PVPlacement(0, G4ThreeVector(), fGammaDetector, "GammaDetector", logicWorld, false, 0, true);
+        // Aquí construyes tu detector gamma usando `targetThickness`
+        // fGammaDetector = ...
 
         return physWorld;
     }
@@ -51,12 +45,6 @@ namespace G4_PCM
 
     void DetectorConstruction::UpdateGeometry()
     {
-        G4RunManager::GetRunManager()->GeometryHasBeenModified();
         G4RunManager::GetRunManager()->ReinitializeGeometry();
-    }
-
-    G4LogicalVolume* DetectorConstruction::GetGammaDetector() const
-    {
-        return fGammaDetector;
     }
 }
