@@ -1,33 +1,27 @@
-#ifndef DETECTORCONSTRUCTION_HH
-#define DETECTORCONSTRUCTION_HH
+#ifndef G4_PCM_DETECTOR_CONSTRUCTION_H
+#define G4_PCM_DETECTOR_CONSTRUCTION_H 1
 
 #include "G4VUserDetectorConstruction.hh"
 #include "G4LogicalVolume.hh"
-#include "G4SystemOfUnits.hh"
 
-namespace G4_PCM
-{
-    class DetectorConstructionMessenger;
+namespace G4_PCM {
 
-    class DetectorConstruction : public G4VUserDetectorConstruction
-    {
+    class DetectorConstruction : public G4VUserDetectorConstruction {
     public:
         DetectorConstruction();
-        ~DetectorConstruction() override;
+        virtual ~DetectorConstruction();
 
         G4VPhysicalVolume* Construct() override;
 
-        void SetTargetThickness(G4double thickness);
-        void UpdateGeometry();  // Nuevo método para actualizar la geometría
+        G4LogicalVolume* GetGammaDetector() const;
 
-        // Nuevo método para obtener el detector gamma
-        G4LogicalVolume* GetGammaDetector() const { return fGammaDetector; }
+        void SetTargetThickness(G4double thickness);
 
     private:
-        G4LogicalVolume* fGammaDetector = nullptr;
-        G4double targetThickness = 80 * nm;
-        DetectorConstructionMessenger* fDetectorMessenger;
+        G4LogicalVolume* fGammaDetector;
+        G4double fTargetThickness;
     };
+
 }
 
-#endif
+#endif // G4_PCM_DETECTOR_CONSTRUCTION_H
