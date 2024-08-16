@@ -20,6 +20,9 @@ namespace G4_PCM
         void SetTargetThickness(G4double thickness);
         void UpdateGeometry();  // Nuevo método para actualizar la geometría
 
+        // Nuevo método para obtener el detector gamma
+        G4LogicalVolume* GetGammaDetector() const { return fGammaDetector; }
+
     private:
         G4LogicalVolume* fGammaDetector = nullptr;
         G4double targetThickness = 80 * nm;

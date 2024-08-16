@@ -33,7 +33,10 @@ namespace G4_PCM
         G4VPhysicalVolume* physWorld = new G4PVPlacement(0, G4ThreeVector(), logicWorld, "World", 0, false, 0, true);
 
         // Aquí construyes tu detector gamma usando `targetThickness`
-        // fGammaDetector = ...
+        G4Box* solidDetector = new G4Box("GammaDetector", 0.5 * m, 0.5 * m, targetThickness / 2);
+        fGammaDetector = new G4LogicalVolume(solidDetector, air, "GammaDetector");
+
+        new G4PVPlacement(0, G4ThreeVector(), fGammaDetector, "GammaDetector", logicWorld, false, 0, true);
 
         return physWorld;
     }

@@ -11,6 +11,14 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:G4-PCM\\include\\DetectorConstruction.hh||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\include\\SteppingAction.hh||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:G4-PCM\\include\\SteppingAction.hh||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\src\\SteppingAction.cc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:G4-PCM\\src\\SteppingAction.cc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\include\\DetectorConstructionMessenger.hh||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:G4-PCM\\include\\DetectorConstructionMessenger.hh||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +54,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "SteppingAction.hh",
+              "DocumentMoniker": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\include\\SteppingAction.hh",
+              "RelativeDocumentMoniker": "G4-PCM\\include\\SteppingAction.hh",
+              "ToolTip": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\include\\SteppingAction.hh",
+              "RelativeToolTip": "G4-PCM\\include\\SteppingAction.hh",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-16T16:45:48.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SteppingAction.cc",
+              "DocumentMoniker": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\src\\SteppingAction.cc",
+              "RelativeDocumentMoniker": "G4-PCM\\src\\SteppingAction.cc",
+              "ToolTip": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\src\\SteppingAction.cc",
+              "RelativeToolTip": "G4-PCM\\src\\SteppingAction.cc",
+              "ViewState": "AQIAABMAAAAAAAAAAAAwwDEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-16T16:45:32.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "RunAction.cc",
               "DocumentMoniker": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\src\\RunAction.cc",
               "RelativeDocumentMoniker": "G4-PCM\\src\\RunAction.cc",
@@ -59,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "EventAction.cc",
               "DocumentMoniker": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\src\\EventAction.cc",
               "RelativeDocumentMoniker": "G4-PCM\\src\\EventAction.cc",
@@ -78,7 +112,7 @@
               "RelativeDocumentMoniker": "G4-PCM\\src\\DetectorConstruction.cc",
               "ToolTip": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\src\\DetectorConstruction.cc",
               "RelativeToolTip": "G4-PCM\\src\\DetectorConstruction.cc",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAAAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwDUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-16T16:31:21.019Z",
               "EditorCaption": ""
@@ -91,14 +125,14 @@
               "RelativeDocumentMoniker": "G4-PCM\\include\\DetectorConstruction.hh",
               "ToolTip": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\include\\DetectorConstruction.hh",
               "RelativeToolTip": "G4-PCM\\include\\DetectorConstruction.hh",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAwwB4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-16T16:30:27.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DetectorConstructionMessenger.cc",
               "DocumentMoniker": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\src\\DetectorConstructionMessenger.cc",
               "RelativeDocumentMoniker": "G4-PCM\\src\\DetectorConstructionMessenger.cc",
@@ -111,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DetectorConstructionMessenger.hh",
               "DocumentMoniker": "C:\\Users\\conej\\Documents\\Universidad\\Geant4\\Projects\\Git\\G4-PCM\\include\\DetectorConstructionMessenger.hh",
               "RelativeDocumentMoniker": "G4-PCM\\include\\DetectorConstructionMessenger.hh",
