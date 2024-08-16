@@ -1,31 +1,31 @@
 #include "DetectorConstructionMessenger.hh"
 #include "DetectorConstruction.hh"
-#include "G4UImanager.hh"
-#include "G4UIcmdWithADoubleAndUnit.hh"
+#include "G4UIcmdWithADouble.hh"
+#include "G4RunManager.hh"
 
 namespace G4_PCM
 {
-    DetectorConstructionMessenger::DetectorConstructionMessenger(DetectorConstruction* detector)
-        : G4UImessenger(), fDetectorConstruction(detector)
+    DetectorConstructionMessenger::DetectorConstructionMessenger(DetectorConstruction* detConstruction)
+        : fDetectorConstruction(detConstruction)
     {
-        fSetTargetThicknessCmd = new G4UIcmdWithADoubleAndUnit("/detector/setTargetThickness", this);
-        fSetTargetThicknessCmd->SetGuidance("Set the thickness of the target.");
-        fSetTargetThicknessCmd->SetParameterName("Thickness", false);
-        fSetTargetThicknessCmd->SetUnitCategory("Length");
-        fSetTargetThicknessCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
+        fTargetThicknessCmd = new G4UIcmdWithADouble("/detector/setTargetThickness", this);
+        fTargetThicknessCmd->SetParameterName("thickness", false);
+        fTargetThicknessCmd->SetDefaultValue(80.0);
+        fTargetThicknessCmd->SetRange("thickness > 0.0");
     }
 
     DetectorConstructionMessenger::~DetectorConstructionMessenger()
     {
-        delete fSetTargetThicknessCmd;
+        delete fTargetThicknessCmd;
     }
 
     void DetectorConstructionMessenger::SetNewValue(G4UIcommand* command, G4String newValue)
     {
-        if (command == fSetTargetThicknessCmd)
+        if (command == fTargetThicknessCmd)
         {
-            fDetectorConstruction->SetTargetThickness(fSetTargetThicknessCmd->GetNewDoubleValue(newValue));
-            fDetectorConstruction->UpdateGeometry();
+            G4double newThickness = fTargetThicknessCmd->GetNewDoubleValue(newValue);
+            fDetectorConstruction->SetTargetThickness(newThickness);
+            // UpdateGeometry is now called within SetTargetThickness
         }
     }
 }
