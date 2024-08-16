@@ -7,6 +7,7 @@
 #include "G4LogicalVolume.hh"
 #include "G4Material.hh"
 #include "G4SystemOfUnits.hh"
+#include "G4RunManager.hh"
 
 namespace G4_PCM
 {
@@ -75,5 +76,10 @@ namespace G4_PCM
     {
         // Lógica para actualizar la geometría si es necesario
         G4RunManager::GetRunManager()->DefineWorldVolume(Construct());
+    }
+
+    G4LogicalVolume* DetectorConstruction::GetGammaDetector() const
+    {
+        return fGammaDetector;
     }
 }

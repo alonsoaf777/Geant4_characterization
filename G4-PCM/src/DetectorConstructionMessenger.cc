@@ -1,7 +1,7 @@
 #include "DetectorConstructionMessenger.hh"
 #include "DetectorConstruction.hh"
 #include "G4UIcmdWithADouble.hh"
-#include "G4RunManager.hh"
+#include "G4RunManager.hh"  // Asegúrate de incluir este encabezado para G4RunManager
 
 namespace G4_PCM
 {
@@ -16,7 +16,7 @@ namespace G4_PCM
 
     DetectorConstructionMessenger::~DetectorConstructionMessenger()
     {
-        delete fTargetThicknessCmd;
+        delete fTargetThicknessCmd;  // Asegúrate de que fTargetThicknessCmd es un puntero
     }
 
     void DetectorConstructionMessenger::SetNewValue(G4UIcommand* command, G4String newValue)
