@@ -1,8 +1,9 @@
-#ifndef G4_PCM_DETECTOR_CONSTRUCTION_MESSENGER_H
-#define G4_PCM_DETECTOR_CONSTRUCTION_MESSENGER_H
+#ifndef DETECTORCONSTRUCTIONMESSENGER_HH
+#define DETECTORCONSTRUCTIONMESSENGER_HH
 
 #include "G4UImessenger.hh"
 #include "G4UIcmdWithADoubleAndUnit.hh"
+#include "G4UIcmdWithoutParameter.hh"
 
 namespace G4_PCM
 {
@@ -19,6 +20,7 @@ namespace G4_PCM
     private:
         DetectorConstruction* fDetectorConstruction;
         G4UIcmdWithADoubleAndUnit* fTargetThicknessCmd;
+        G4UIcmdWithoutParameter* fUpdateGeometryCmd;  // Nuevo comando
     };
 }
 
