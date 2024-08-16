@@ -1,8 +1,0 @@
-# Archivo .mac para energías en el rango 0.0061305 - 0.01 keV
-
-/gun/energy 0.0061305 keV
-/run/beamOn 3000
-
-/gun/energy 0.006222 keV
-/run/beamOn 3000
-

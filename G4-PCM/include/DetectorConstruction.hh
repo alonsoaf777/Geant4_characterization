@@ -2,23 +2,32 @@
 #define G4_PCM_DETECTOR_CONSTRUCTION_H 1
 
 #include "G4VUserDetectorConstruction.hh"
+#include "G4SystemOfUnits.hh"
+#include "G4UIcmdWithADoubleAndUnit.hh"
 
 namespace G4_PCM
 {
-	class DetectorConstruction : public G4VUserDetectorConstruction
-	{
-	public:
-		DetectorConstruction() = default;
-		~DetectorConstruction() override = default;
+    class DetectorConstructionMessenger; // Forward declaration
 
-		G4VPhysicalVolume* Construct() override;
+    class DetectorConstruction : public G4VUserDetectorConstruction
+    {
+    public:
+        DetectorConstruction();
+        ~DetectorConstruction() override;
 
-		G4LogicalVolume* GetGammaDetector() const { return fGammaDetector; }
+        G4VPhysicalVolume* Construct() override;
 
-	private:
-		G4LogicalVolume* fGammaDetector = nullptr;
-	};
+        void SetTargetThickness(G4double thickness);
+
+        G4LogicalVolume* GetGammaDetector() const { return fGammaDetector; }
+
+    private:
+        G4LogicalVolume* fGammaDetector = nullptr;
+        G4double fTargetThickness = 60 * mm; // Valor predeterminado
+
+        G4UIcmdWithADoubleAndUnit* fTargetThicknessCmd;
+        DetectorConstructionMessenger* fMessenger; // Pointer to the messenger
+    };
 }
-
 
 #endif
