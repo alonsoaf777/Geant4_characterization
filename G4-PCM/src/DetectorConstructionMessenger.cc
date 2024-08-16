@@ -12,6 +12,7 @@ namespace G4_PCM {
         // Configuraciones por defecto
         analysisManager->SetDefaultFileType("root");
         analysisManager->SetNtupleMerging(true);
+        // Aqui no poner deafault
         analysisManager->SetVerboseLevel(4);
 
         // Crear nTuple para almacenar datos
