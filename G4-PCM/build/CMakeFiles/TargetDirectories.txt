@@ -1,7 +1,0 @@
-/home/alosnamon/Geant4_characterization-Lab-VTnM-V1/G4-PCM/build/CMakeFiles/install/strip.dir
-/home/alosnamon/Geant4_characterization-Lab-VTnM-V1/G4-PCM/build/CMakeFiles/install/local.dir
-/home/alosnamon/Geant4_characterization-Lab-VTnM-V1/G4-PCM/build/CMakeFiles/install.dir
-/home/alosnamon/Geant4_characterization-Lab-VTnM-V1/G4-PCM/build/CMakeFiles/list_install_components.dir
-/home/alosnamon/Geant4_characterization-Lab-VTnM-V1/G4-PCM/build/CMakeFiles/rebuild_cache.dir
-/home/alosnamon/Geant4_characterization-Lab-VTnM-V1/G4-PCM/build/CMakeFiles/edit_cache.dir
-/home/alosnamon/Geant4_characterization-Lab-VTnM-V1/G4-PCM/build/CMakeFiles/PCM.dir
