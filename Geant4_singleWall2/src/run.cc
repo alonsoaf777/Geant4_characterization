@@ -21,6 +21,7 @@ MyRunAction::MyRunAction()
 	man->CreateNtuple("CrossSection", "CrossSection");
 	man->CreateNtupleDColumn("Volume");
 	man->CreateNtupleDColumn("Mass");
+	man->CreateNtupleDColumn("Energy");
 	man->FinishNtuple(2); 
 	 
 }

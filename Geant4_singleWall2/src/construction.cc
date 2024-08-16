@@ -11,9 +11,9 @@ MyDetectorConstruction::MyDetectorConstruction()
 	
 	nCols = 30; 
 	nRows = 30;
-	singleWallZ =  1.4*cm;
+	singleWallZ =  0.1 * mm;
 	//Position of the target to access it in the generator
-	targetPosition = G4ThreeVector(0., -10*cm, 5*cm);
+	targetPosition = G4ThreeVector(0., -5*cm, 5*cm);
 	
 	DefineMaterials(); 
 }	
@@ -27,7 +27,7 @@ void MyDetectorConstruction::DefineMaterials()
 	// --------------------- Materials
 	G4NistManager *nist = G4NistManager::Instance(); 
 	// Element for the wall
-	wallMat = nist->FindOrBuildMaterial("G4_Al"); 
+	wallMat = nist->FindOrBuildMaterial("G4_W"); 
 	//Material for the detector
 	detectorMat = nist->FindOrBuildMaterial("G4_Si"); 
 	//Material for world volume

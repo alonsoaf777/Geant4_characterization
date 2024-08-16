@@ -119,11 +119,15 @@ void CrossRun::EndOfRun()
 	  
 	  //restore default format
 	  G4cout.precision(dfprec); 
+	 	
+	  massicCS = massicCS * g / cm2; 
+	  fEkin = fEkin / keV; 
 	  
 	  G4AnalysisManager *man = G4AnalysisManager::Instance(); 
 	  
 	  man->FillNtupleDColumn(2, 0, CrossSection); 
 	  man->FillNtupleDColumn(2, 1, massicCS); 
+	  man->FillNtupleDColumn(2, 2, fEkin); 
 	  man->AddNtupleRow(2); 
 	  
 }

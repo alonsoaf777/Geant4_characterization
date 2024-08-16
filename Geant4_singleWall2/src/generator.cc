@@ -30,7 +30,7 @@ MyPrimaryGenerator::MyPrimaryGenerator()
 	
 	G4ThreeVector direction = (targetPosition - gunPosition).unit(); 
 	
-	fParticleGun->SetParticleMomentumDirection(direction); 
+	fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,0., 1)); 
 	fParticleGun->SetParticleDefinition(particle);  
 
 }
