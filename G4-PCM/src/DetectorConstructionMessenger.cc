@@ -10,7 +10,7 @@ namespace G4_PCM
     DetectorConstructionMessenger::DetectorConstructionMessenger(DetectorConstruction* detector)
         : fDetector(detector)
     {
-        fTargetThicknessCmd = new G4UIcmdWithADoubleAndUnit("/det/targetThickness", this);
+        fTargetThicknessCmd = new G4UIcmdWithADoubleAndUnit("/det/t", this);
         fTargetThicknessCmd->SetGuidance("Set the target thickness.");
         fTargetThicknessCmd->SetParameterName("thickness", true);
         fTargetThicknessCmd->SetRange("thickness > 0.");
