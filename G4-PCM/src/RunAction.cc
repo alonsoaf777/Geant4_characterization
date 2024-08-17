@@ -1,76 +1,52 @@
-
 #include "RunAction.hh"
 #include "G4ThreeVector.hh"
 #include "G4UnitsTable.hh"
-#include "G4Run.hh" // This is to access the run number
-
+#include "G4Run.hh"
+#include "EventAction.hh" // Include EventAction for access to the static method
 
 namespace G4_PCM {
 	RunAction::RunAction() {
-
-		// access analysis manager
 		auto analysisManager = G4AnalysisManager::Instance();
-
-		// set default settings
 		analysisManager->SetDefaultFileType("root");
 		analysisManager->SetNtupleMerging(true);
-		analysisManager->SetVerboseLevel(4); // It was 0
-		// analysisManager->SetFileName("NTuples");
-
-		// create nTuple to store the data:
+		analysisManager->SetVerboseLevel(4);
 		analysisManager->CreateNtuple("G4_PCM", "Hits");
-		// The letters D, I, S, F correspond to types
-		analysisManager->CreateNtupleDColumn("Energy"); //   id = 0
-		// analysisManager->CreateNtupleDColumn("PositionX"); //id = 1
-		// analysisManager->CreateNtupleDColumn("PositionY"); //id = 2
-		// analysisManager->CreateNtupleDColumn("PositionZ"); //id = 3
+		analysisManager->CreateNtupleDColumn("Energy");
 		analysisManager->FinishNtuple();
-
 	}
 
 	RunAction::~RunAction() {
 	}
 
 	void RunAction::BeginOfRunAction(const G4Run* aRun) {
-		// start time
 		fTimer.Start();
-
-		auto *analysisManager = G4AnalysisManager::Instance();
-
-		// Get the run number
+		auto* analysisManager = G4AnalysisManager::Instance();
 		G4int runNumber = aRun->GetRunID();
-
-		// Set the file name including the run number
 		G4String fileName = "NTuples_Run" + std::to_string(runNumber);
 		analysisManager->SetFileName(fileName);
-
-		// Open the file
 		analysisManager->OpenFile();
 	}
 
 	void RunAction::EndOfRunAction(const G4Run* aRun) {
-
-		auto *analysisManager = G4AnalysisManager::Instance();
-
-		// write to output file
+		auto* analysisManager = G4AnalysisManager::Instance();
 		analysisManager->Write();
 		analysisManager->CloseFile();
-
-		// end time
 		fTimer.Stop();
-
-		// print out the time it took
 		PrintTime();
+
+		// Print the total number of ntuple registrations
+		G4cout
+			<< "Total number of hits registrations: "
+			<< EventAction::GetNtupleRegistrationCount()
+			<< G4endl;
 	}
 
 	void RunAction::PrintTime() {
 		auto time = fTimer.GetRealElapsed();
-
 		G4cout
 			<< "Elapsed time: "
 			<< time
 			<< " Seconds."
 			<< G4endl;
-
 	}
 }
