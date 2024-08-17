@@ -28,7 +28,7 @@ class Run : public G4Run
 
   private:
     G4ParticleDefinition * link_ParticleDefinition = nullptr;
-    std::map<G4String,G4int>  fProcCounter;
+    std::map <G4String,G4int>  fProcCounter;
     double link_Energy;
 };
 

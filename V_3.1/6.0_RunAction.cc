@@ -1,32 +1,40 @@
 #include "6.0_RunAction.hh"
 
+extern int arguments;
+
 MyRunAction::MyRunAction()
 {
     G4AnalysisManager * analysisManager = G4AnalysisManager::Instance();
-    
-    analysisManager -> CreateNtuple("Photons", "Photons");
-    analysisManager -> CreateNtupleIColumn("Event_Count");
-    analysisManager -> CreateNtupleDColumn("X_axis");
-    analysisManager -> CreateNtupleDColumn("Y_axis");
-    analysisManager -> CreateNtupleDColumn("Z_axis");
-    analysisManager -> CreateNtupleDColumn("Photons'_Wavelengths");
-    analysisManager -> FinishNtuple(0);
-    
-    analysisManager -> CreateNtuple("Hits", "Hits");
-    analysisManager -> CreateNtupleIColumn("Event_Count");
-    analysisManager -> CreateNtupleDColumn("X_Detectors");
-    analysisManager -> CreateNtupleDColumn("Y_Detectors");
-    analysisManager -> CreateNtupleDColumn("Z_Detectors");
-    analysisManager -> FinishNtuple(1);
 
-    analysisManager -> CreateNtuple("Scoring", "Scoring");
-    analysisManager -> CreateNtupleDColumn("Energy_Deposition");
-    analysisManager -> FinishNtuple(2);
+    if (arguments == 1 || arguments == 3)
+    {
+        analysisManager -> CreateNtuple("Photons", "Photons");
+        analysisManager -> CreateNtupleIColumn("Event_Count");
+        analysisManager -> CreateNtupleDColumn("X_axis");
+        analysisManager -> CreateNtupleDColumn("Y_axis");
+        analysisManager -> CreateNtupleDColumn("Z_axis");
+        analysisManager -> CreateNtupleDColumn("Photons'_Wavelengths");
+        analysisManager -> FinishNtuple(0);
+        
+        analysisManager -> CreateNtuple("Hits", "Hits");
+        analysisManager -> CreateNtupleIColumn("Event_Count");
+        analysisManager -> CreateNtupleDColumn("X_Detectors");
+        analysisManager -> CreateNtupleDColumn("Y_Detectors");
+        analysisManager -> CreateNtupleDColumn("Z_Detectors");
+        analysisManager -> FinishNtuple(1);
 
-    analysisManager -> CreateNtuple("Transportation", "Transportation");
-    analysisManager -> CreateNtupleDColumn("Mass_Attenuation");
-    analysisManager -> CreateNtupleDColumn("Energy_keV");
-    analysisManager -> FinishNtuple(3);
+        analysisManager -> CreateNtuple("Scoring", "Scoring");
+        analysisManager -> CreateNtupleDColumn("Energy_Deposition");
+        analysisManager -> FinishNtuple(2);
+    }
+
+    if (arguments == 2 || arguments == 4)
+    {
+        analysisManager -> CreateNtuple("Transportation", "Transportation");
+        analysisManager -> CreateNtupleDColumn("Mass_Attenuation");
+        analysisManager -> CreateNtupleDColumn("Energy_keV");
+        analysisManager -> FinishNtuple(0);
+    }
 }
 
 MyRunAction::~MyRunAction(){}

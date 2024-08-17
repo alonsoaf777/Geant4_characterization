@@ -9,7 +9,7 @@ void MyEventAction::BeginOfEventAction(const G4Event *) { fEDep = 0.0; }
 
 void MyEventAction::EndOfEventAction(const G4Event *) 
 { 
-    if(arguments < 3) 
+    if(arguments == 1 || arguments == 3) 
     { 
         G4cout << "Energy deposition: " << fEDep << G4endl; 
         G4AnalysisManager * analysisManager = G4AnalysisManager::Instance();

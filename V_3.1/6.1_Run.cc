@@ -85,9 +85,9 @@ void Run::EndOfRun()
         link_Energy = link_Energy / keV;
         G4AnalysisManager * analysisManager = G4AnalysisManager::Instance();
 
-        analysisManager -> FillNtupleDColumn(3, 0, Coefficient);
-        analysisManager -> FillNtupleDColumn(3, 1, link_Energy);
-        analysisManager -> AddNtupleRow(3);
+        analysisManager -> FillNtupleDColumn(0, 0, Coefficient);
+        analysisManager -> FillNtupleDColumn(0, 1, link_Energy);
+        analysisManager -> AddNtupleRow(0);
        
         fProcCounter.clear(); // remove all contents in fProcCounter 
         G4cout.precision(dfprec); //restore default format
