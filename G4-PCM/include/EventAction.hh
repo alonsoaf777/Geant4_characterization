@@ -7,33 +7,37 @@
 #include "G4UnitsTable.hh"
 #include "G4SystemOfUnits.hh"
 
-#include "RunAction.hh"
+// Forward declaration of RunAction
+namespace G4_PCM {
+    class RunAction;  // Forward declaration
+}
 
 namespace G4_PCM {
 
-	class EventAction : public G4UserEventAction {
-	public:
-		EventAction(RunAction*);
-		~EventAction() override = default;
+    class EventAction : public G4UserEventAction {
+    public:
+        EventAction(RunAction*);
+        ~EventAction() override = default;
 
-		void BeginOfEventAction(const G4Event* anEvent) override;
-		void EndOfEventAction(const G4Event* anEvent) override;
+        void BeginOfEventAction(const G4Event* anEvent) override;
+        void EndOfEventAction(const G4Event* anEvent) override;
 
-		void AddEnergy(G4double energy);
-		void SetPosition(G4ThreeVector pos);
+        void AddEnergy(G4double energy);
+        void SetPosition(G4ThreeVector pos);
 
-		void Print();
+        void Print();
 
-		// Method to get the count of ntuple registrations
-		static int GetNtupleRegistrationCount();
+        // Method to get the count of ntuple registrations
+        static int GetNtupleRegistrationCount();
+        static void ResetNtupleRegistrationCount(); // Add this method
 
-	private:
-		G4double fEnergy;
-		G4ThreeVector fPosition;
+    private:
+        G4double fEnergy;
+        G4ThreeVector fPosition;
 
-		// Static variable to count the number of ntuple registrations
-		static int fNtupleRegistrationCount;
-	};
+        // Static variable to count the number of ntuple registrations
+        static int fNtupleRegistrationCount;
+    };
 
 }
 
