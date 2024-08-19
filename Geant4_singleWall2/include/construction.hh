@@ -42,7 +42,7 @@ private:
 	
 	G4GenericMessenger *fMessenger; 
 	
-	G4Material *wallMat, *detectorMat, *worldMat, *fMaterial; 
+	G4Material *wallMat, *detectorMat, *worldMat, *fMaterial, *V2O5; 
 	
 	void DefineMaterials();
 

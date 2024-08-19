@@ -11,7 +11,7 @@ MyDetectorConstruction::MyDetectorConstruction()
 	
 	nCols = 30; 
 	nRows = 30;
-	singleWallZ =  0.1 * mm;
+	singleWallZ =  2.4 * mm;
 	//Position of the target to access it in the generator
 	targetPosition = G4ThreeVector(0., -5*cm, 5*cm);
 	
@@ -26,8 +26,18 @@ void MyDetectorConstruction::DefineMaterials()
 {
 	// --------------------- Materials
 	G4NistManager *nist = G4NistManager::Instance(); 
+
 	// Element for the wall
-	wallMat = nist->FindOrBuildMaterial("G4_W"); //versión con wolframio
+	wallMat = nist->FindOrBuildMaterial("G4_Al"); 
+
+	 G4Element* vanadium = nist->FindOrBuildElement("V");
+    G4Element* oxygen = nist->FindOrBuildElement("O");
+
+    // Define V2O5 material with correct density and composition
+    G4Material* V2O5 = new G4Material("V2O5", 3.36*g/cm3, 2);
+    V2O5->AddElement(vanadium, 2); // 2 atoms of Vanadium
+    V2O5->AddElement(oxygen, 5);   // 5 atoms of Oxygen
+
 	//Material for the detector
 	detectorMat = nist->FindOrBuildMaterial("G4_Si"); 
 	//Material for world volume
@@ -44,7 +54,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	// ---------------------- Geometry
 	G4double worldSizeXYZ = 1*m / 2;
 	G4double singleWallXY = 25*cm / 2; 
-	G4double singleWallZ2 = singleWallZ / 2; 
+	G4double singleWallZ2 = singleWallZ /2; 
 	//singleWallZ =
 	G4double detectorZ = 2*cm / 2; 
 	// Construction
@@ -68,7 +78,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	{
 		for (G4int j = 0; j < nCols; j++)
 		{
-			physDetector = new G4PVPlacement(0, G4ThreeVector(-worldSizeXYZ + (i + 0.5)*m/nRows, -worldSizeXYZ + (j + 0.5)*m/nCols, worldSizeXYZ - detectorZ), logicDetector, "physDetector", logicWorld, false, i+j*nCols, true ); 
+			physDetector = new G4PVPlacement(0, G4ThreeVector(-worldSizeXYZ + (i + 0.5)*m/nRows, -worldSizeXYZ + (j + 0.5)*m/nCols, worldSizeXYZ - detectorZ), logicDetector, "physDetector", logicWorld, false, i+j*nCols, false ); 
 		}
 	}
 	

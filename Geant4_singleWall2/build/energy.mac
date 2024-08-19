@@ -1,1 +1,1 @@
-/control/loop scancross.mac energy 20 110 1 
+/control/loop scancross.mac energy 20 110 0.5
